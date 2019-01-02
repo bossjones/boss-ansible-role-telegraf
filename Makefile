@@ -10,8 +10,8 @@ DNSMASQ_DOMAIN         := hyenalab.home
 # URL_PATH_CONSUL        := 8500
 # URL_PATH_TRAEFIK       := 80
 # URL_PATH_TRAEFIK_API   := 8080
-URL_PATH_NETDATA_REGISTRY  := "http://rsyslogd-master-01.$(DNSMASQ_DOMAIN):19999"
-URL_PATH_NETDATA_NODE      := "http://rsyslogd-worker-01.$(DNSMASQ_DOMAIN):19999"
+URL_PATH_NETDATA_REGISTRY  := "http://telegraf-master-01.$(DNSMASQ_DOMAIN):19999"
+URL_PATH_NETDATA_NODE      := "http://telegraf-worker-01.$(DNSMASQ_DOMAIN):19999"
 URL_PATH_WHOAMI            := "http://whoami.$(DNSMASQ_DOMAIN)"
 URL_PATH_ECHOSERVER        := "http://echoserver.$(DNSMASQ_DOMAIN)"
 URL_PATH_ELASTICSEARCH     := "http://elasticsearch.$(DNSMASQ_DOMAIN)"
@@ -26,7 +26,7 @@ URL_PATH_DASHBOARD         := "http://localhost:8001/api/v1/namespaces/kube-syst
 PR_SHA                := $(shell git rev-parse HEAD)
 
 define ASCILOGO
-boss-ansible-role-rsyslogd
+boss-ansible-role-telegraf
 =======================================
 endef
 
@@ -168,8 +168,8 @@ destroy:
 run-ansible:
 	@ansible-playbook -i inventory.ini vagrant_playbook.yml -v
 
-run-ansible-rsyslogd:
-	@ansible-playbook -i inventory.ini rsyslogd_playbook.yml -v
+run-ansible-telegraf:
+	@ansible-playbook -i inventory.ini telegraf_playbook.yml -v
 
 run-ansible-etckeeper:
 	@ansible-playbook -i inventory.ini vagrant_playbook.yml -v -f 10 --tags etckeeper
@@ -238,10 +238,10 @@ bridge-halt:
 	vagrant halt
 
 ssh-bridge-master:
-	ssh -vvvv -F ./ssh_config rsyslogd-master-01.scarlettlab.home
+	ssh -vvvv -F ./ssh_config telegraf-master-01.scarlettlab.home
 
 ssh-bridge-worker:
-	ssh -vvvv -F ./ssh_config rsyslogd-worker-01.scarlettlab.home
+	ssh -vvvv -F ./ssh_config telegraf-worker-01.scarlettlab.home
 
 ping-bridge:
 	@ansible-playbook -v -i hosts ping.yml

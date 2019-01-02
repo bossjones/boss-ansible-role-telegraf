@@ -1,7 +1,7 @@
 ---
-# handlers file for boss-ansible-role-rsyslogd
-
-- name: Restart rsyslogd
+# handlers file for ansible-telegraf
+- name: "restart telegraf"
   service:
-    name: 'rsyslog'
-    state: 'restarted'
+    name: "telegraf"
+    state: "restarted"
+  become: true

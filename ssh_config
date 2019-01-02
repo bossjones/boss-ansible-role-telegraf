@@ -1,20 +1,10 @@
-Host rsyslogd-worker-01*
+Host telegraf-master-01*
   User vagrant
   Port 22
   UserKnownHostsFile /dev/null
   StrictHostKeyChecking no
   PasswordAuthentication no
-  IdentityFile /Users/malcolm/dev/bossjones/bossjones-playbook-suite/boss-ansible-role-nfs/.vagrant/machines/rsyslogd-worker-01/virtualbox/private_key
-  IdentitiesOnly yes
-  LogLevel FATAL
-
-Host rsyslogd-master-01*
-  User vagrant
-  Port 22
-  UserKnownHostsFile /dev/null
-  StrictHostKeyChecking no
-  PasswordAuthentication no
-  IdentityFile /Users/malcolm/dev/bossjones/bossjones-playbook-suite/boss-ansible-role-nfs/.vagrant/machines/rsyslogd-master-01/virtualbox/private_key
+  IdentityFile /Users/malcolm/dev/bossjones/bossjones-playbook-suite/boss-ansible-role-telegraf/.vagrant/machines/telegraf-master-01/virtualbox/private_key
   IdentitiesOnly yes
   LogLevel FATAL
 

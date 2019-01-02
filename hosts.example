@@ -1,5 +1,5 @@
 [master]
-rsyslogd-master-01.scarlettlab.home
+telegraf-master-01.scarlettlab.home
 [node]
 rsyslogd-worker-01.scarlettlab.home
 

@@ -15,6 +15,6 @@
   roles:
     - role: ../
       task: perf
-      boss__nfs__master_node_ip: '192.168.50.108'
+      boss__nfs__master_node_ip: '192.168.40.129'
       boss__nfs__nfs_interface: 'enp0s8'
       # boss__nfs__nfs_interface: 'enp0s3'

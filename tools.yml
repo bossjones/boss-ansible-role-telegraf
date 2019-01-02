@@ -186,7 +186,7 @@
         - tree
 
 # TODO: For consideration
-# root@rsyslogd-master-01:~# apt-cache search top | grep "top - .*"
+# root@telegraf-master-01:~# apt-cache search top | grep "top - .*"
 # gir1.2-freedesktop - Introspection data for some FreeDesktop components
 # libunity-scopes-json-def-desktop - binding to get places into the launcher - desktop def file
 # powertop - diagnose issues with power consumption and management
@@ -267,7 +267,7 @@
 # xubuntu-desktop - Xubuntu desktop system
 # yubioath-desktop - Graphical interface for displaying OATH codes with a Yubikey
 # mythbuntu-desktop - The Mythbuntu standalone system
-# root@rsyslogd-master-01:~#
+# root@telegraf-master-01:~#
 
 
 
@@ -989,8 +989,8 @@
 
 # Mount config options
 # root@rsyslogd-worker-01:~# nfsstat -m
-# /mnt/publicdata from 192.168.50.108:/mnt/publicdata
-#  Flags:	rw,noatime,vers=4.0,rsize=262144,wsize=262144,namlen=255,acregmin=1800,acregmax=1800,acdirmin=1800,acdirmax=1800,hard,proto=tcp,port=0,timeo=600,retrans=2,sec=sys,clientaddr=192.168.50.109,local_lock=none,addr=192.168.50.108
+# /mnt/publicdata from 192.168.40.129:/mnt/publicdata
+#  Flags:	rw,noatime,vers=4.0,rsize=262144,wsize=262144,namlen=255,acregmin=1800,acregmax=1800,acdirmin=1800,acdirmax=1800,hard,proto=tcp,port=0,timeo=600,retrans=2,sec=sys,clientaddr=192.168.50.109,local_lock=none,addr=192.168.40.129
 
   # # SOURCE: https://github.com/bossjones/boss-ansible-homelab/blob/be5127249f978d841e8987886ffd4c5076be816f/vagrant_playbook.yml
   # - name: debian | Installing Pre-Reqs
