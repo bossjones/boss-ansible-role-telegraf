@@ -1,6 +1,9 @@
 ---
 # tasks file for ansible-telegraf
 
+- include: facts.yml
+  when: ansible_os_family == "Debian"
+
 - include: debian.yml
   when: ansible_os_family == "Debian"
 

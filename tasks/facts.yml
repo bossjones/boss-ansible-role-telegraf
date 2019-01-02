@@ -31,9 +31,9 @@
       sys_arch: "armv5"
     when: ansible_architecture is match("armv5.+")
 
-  - name: Set system architecture for ansible var boss__kubernetes__kubeadm__apt_arch
+  - name: Set system architecture for ansible var boss__telegraf__apt_arch
     set_fact:
-      boss__kubernetes__kubeadm__apt_arch: "{{sys_arch}}"
+      boss__telegraf__apt_arch: "{{sys_arch}}"
 
   tags:
   - always

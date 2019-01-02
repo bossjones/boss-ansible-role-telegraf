@@ -42,7 +42,8 @@ telegraf_basic_inputs:
 
 telagraf_config: false
 
-telegraf_debian_file: "telegraf_{{ telegraf_version }}-1_amd64.deb"
+# telegraf_debian_file: "telegraf_{{ telegraf_version }}-1_amd64.deb"
+telegraf_debian_file: "telegraf_{{ telegraf_version }}-1_{{sys_arch}}.deb"
 
 telegraf_dl_uri: https://dl.influxdata.com/telegraf/releases
 

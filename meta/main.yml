@@ -1,5 +1,5 @@
 galaxy_info:
-  author: Larry Smith Jr.
+  author: bossjones
   description: An [Ansible](https://www.ansible.com) role to install/configure [Telegraf](https://www.influxdata.com/time-series-platform/telegraf)
 
   license: MIT
@@ -15,6 +15,7 @@ galaxy_info:
       versions:
         - trusty
         - xenial
+        - bionic
     - name: EL
       versions:
         - 7

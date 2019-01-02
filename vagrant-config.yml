@@ -13,5 +13,5 @@
     - telegraf-master-01
   servers:
     - telegraf-master-01
-  influx_masters:
+  telegraf_masters:
     - telegraf-master-01
