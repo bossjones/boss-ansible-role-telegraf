@@ -25,8 +25,8 @@
         ], 
         "groups": {
             "all": [
-                "telegraf-master-01", 
-                "localhost"
+                "localhost", 
+                "telegraf-master-01"
             ], 
             "influx_masters": [
                 "telegraf-master-01"
@@ -49,7 +49,7 @@
         "inventory_file": "/Users/malcolm/dev/bossjones/boss-ansible-role-telegraf/inventory.ini", 
         "inventory_hostname": "localhost", 
         "inventory_hostname_short": "localhost", 
-        "omit": "__omit_place_holder__89620b22dc77785c1a13e8760ba5177a297c62af", 
+        "omit": "__omit_place_holder__90a1fba9c64ec1f6e9354d0c7ce9c930697e3d63", 
         "playbook_dir": "/Users/malcolm/dev/bossjones/boss-ansible-role-telegraf"
     }, 
     "telegraf-master-01": {
@@ -290,16 +290,16 @@
         "ansible_date_time": {
             "date": "2019-01-02", 
             "day": "02", 
-            "epoch": "1546468761", 
+            "epoch": "1546469263", 
             "hour": "17", 
-            "iso8601": "2019-01-02T22:39:21Z", 
-            "iso8601_basic": "20190102T173921642115", 
-            "iso8601_basic_short": "20190102T173921", 
-            "iso8601_micro": "2019-01-02T22:39:21.642173Z", 
-            "minute": "39", 
+            "iso8601": "2019-01-02T22:47:43Z", 
+            "iso8601_basic": "20190102T174743714487", 
+            "iso8601_basic_short": "20190102T174743", 
+            "iso8601_micro": "2019-01-02T22:47:43.714547Z", 
+            "minute": "47", 
             "month": "01", 
-            "second": "21", 
-            "time": "17:39:21", 
+            "second": "43", 
+            "time": "17:47:43", 
             "tz": "EST", 
             "tz_offset": "-0500", 
             "weekday": "Wednesday", 
@@ -765,7 +765,7 @@
             "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin", 
             "PWD": "/home/vagrant", 
             "SHELL": "/bin/bash", 
-            "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-qwnewbwazornjaqyxlxwnwqqvoezvfyr; DEBIAN_FRONTEND=noninteractive /usr/bin/python", 
+            "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-jxlcehuoxuwnnkabwjavwrhljlxvqsfr; DEBIAN_FRONTEND=noninteractive /usr/bin/python", 
             "SUDO_GID": "1000", 
             "SUDO_UID": "1000", 
             "SUDO_USER": "vagrant", 
@@ -909,16 +909,16 @@
             "date_time": {
                 "date": "2019-01-02", 
                 "day": "02", 
-                "epoch": "1546468761", 
+                "epoch": "1546469263", 
                 "hour": "17", 
-                "iso8601": "2019-01-02T22:39:21Z", 
-                "iso8601_basic": "20190102T173921642115", 
-                "iso8601_basic_short": "20190102T173921", 
-                "iso8601_micro": "2019-01-02T22:39:21.642173Z", 
-                "minute": "39", 
+                "iso8601": "2019-01-02T22:47:43Z", 
+                "iso8601_basic": "20190102T174743714487", 
+                "iso8601_basic_short": "20190102T174743", 
+                "iso8601_micro": "2019-01-02T22:47:43.714547Z", 
+                "minute": "47", 
                 "month": "01", 
-                "second": "21", 
-                "time": "17:39:21", 
+                "second": "43", 
+                "time": "17:47:43", 
                 "tz": "EST", 
                 "tz_offset": "-0500", 
                 "weekday": "Wednesday", 
@@ -1383,7 +1383,7 @@
                 "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin", 
                 "PWD": "/home/vagrant", 
                 "SHELL": "/bin/bash", 
-                "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-qwnewbwazornjaqyxlxwnwqqvoezvfyr; DEBIAN_FRONTEND=noninteractive /usr/bin/python", 
+                "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-jxlcehuoxuwnnkabwjavwrhljlxvqsfr; DEBIAN_FRONTEND=noninteractive /usr/bin/python", 
                 "SUDO_GID": "1000", 
                 "SUDO_UID": "1000", 
                 "SUDO_USER": "vagrant", 
@@ -1772,16 +1772,16 @@
             }, 
             "machine": "x86_64", 
             "machine_id": "1923441338fe4ce9ad2e6dfcb7794176", 
-            "memfree_mb": 1065, 
+            "memfree_mb": 1057, 
             "memory_mb": {
                 "nocache": {
-                    "free": 1842, 
-                    "used": 158
+                    "free": 1834, 
+                    "used": 166
                 }, 
                 "real": {
-                    "free": 1065, 
+                    "free": 1057, 
                     "total": 2000, 
-                    "used": 935
+                    "used": 943
                 }, 
                 "swap": {
                     "cached": 0, 
@@ -1794,18 +1794,18 @@
             "module_setup": true, 
             "mounts": [
                 {
-                    "block_available": 2167156, 
+                    "block_available": 2167124, 
                     "block_size": 4096, 
                     "block_total": 2524617, 
-                    "block_used": 357461, 
+                    "block_used": 357493, 
                     "device": "/dev/sda1", 
                     "fstype": "ext4", 
-                    "inode_available": 1209657, 
+                    "inode_available": 1209656, 
                     "inode_total": 1280000, 
-                    "inode_used": 70343, 
+                    "inode_used": 70344, 
                     "mount": "/", 
                     "options": "rw,relatime,data=ordered", 
-                    "size_available": 8876670976, 
+                    "size_available": 8876539904, 
                     "size_total": 10340831232, 
                     "uuid": "d5123bd1-3647-41c3-8075-7995b09280cc"
                 }
@@ -1905,7 +1905,7 @@
             ], 
             "system_capabilities_enforced": "True", 
             "system_vendor": "innotek GmbH", 
-            "uptime_seconds": 2342, 
+            "uptime_seconds": 2844, 
             "user_dir": "/root", 
             "user_gecos": "root", 
             "user_gid": 0, 
@@ -2130,16 +2130,16 @@
         }, 
         "ansible_machine": "x86_64", 
         "ansible_machine_id": "1923441338fe4ce9ad2e6dfcb7794176", 
-        "ansible_memfree_mb": 1065, 
+        "ansible_memfree_mb": 1057, 
         "ansible_memory_mb": {
             "nocache": {
-                "free": 1842, 
-                "used": 158
+                "free": 1834, 
+                "used": 166
             }, 
             "real": {
-                "free": 1065, 
+                "free": 1057, 
                 "total": 2000, 
-                "used": 935
+                "used": 943
             }, 
             "swap": {
                 "cached": 0, 
@@ -2151,18 +2151,18 @@
         "ansible_memtotal_mb": 2000, 
         "ansible_mounts": [
             {
-                "block_available": 2167156, 
+                "block_available": 2167124, 
                 "block_size": 4096, 
                 "block_total": 2524617, 
-                "block_used": 357461, 
+                "block_used": 357493, 
                 "device": "/dev/sda1", 
                 "fstype": "ext4", 
-                "inode_available": 1209657, 
+                "inode_available": 1209656, 
                 "inode_total": 1280000, 
-                "inode_used": 70343, 
+                "inode_used": 70344, 
                 "mount": "/", 
                 "options": "rw,relatime,data=ordered", 
-                "size_available": 8876670976, 
+                "size_available": 8876539904, 
                 "size_total": 10340831232, 
                 "uuid": "d5123bd1-3647-41c3-8075-7995b09280cc"
             }
@@ -2272,7 +2272,7 @@
         ], 
         "ansible_system_capabilities_enforced": "True", 
         "ansible_system_vendor": "innotek GmbH", 
-        "ansible_uptime_seconds": 2342, 
+        "ansible_uptime_seconds": 2844, 
         "ansible_user_dir": "/root", 
         "ansible_user_gecos": "root", 
         "ansible_user_gid": 0, 
@@ -2573,11 +2573,11 @@
         "boss__core__register_uuid": {
             "changed": false, 
             "cmd": "dmidecode --string system-uuid | tail -n 1 || true", 
-            "delta": "0:00:00.002219", 
-            "end": "2019-01-02 17:39:13.003954", 
+            "delta": "0:00:00.002126", 
+            "end": "2019-01-02 17:47:35.070814", 
             "failed": false, 
             "rc": 0, 
-            "start": "2019-01-02 17:39:13.001735", 
+            "start": "2019-01-02 17:47:35.068688", 
             "stderr": "", 
             "stderr_lines": [], 
             "stdout": "5C9011C6-5952-4D79-9111-409BB3399102", 
@@ -2588,12 +2588,12 @@
         "boss__etckeeper__register_highlevel_package_manager": {
             "changed": false, 
             "cmd": ". /etc/etckeeper/etckeeper.conf.dpkg-divert && echo ${HIGHLEVEL_PACKAGE_MANAGER}", 
-            "delta": "0:00:00.001666", 
-            "end": "2019-01-02 17:39:29.276537", 
+            "delta": "0:00:00.001694", 
+            "end": "2019-01-02 17:47:51.537495", 
             "failed": false, 
             "failed_when_result": false, 
             "rc": 0, 
-            "start": "2019-01-02 17:39:29.274871", 
+            "start": "2019-01-02 17:47:51.535801", 
             "stderr": "", 
             "stderr_lines": [], 
             "stdout": "apt", 
@@ -2614,12 +2614,12 @@
         "boss__etckeeper__register_lowlevel_package_manager": {
             "changed": false, 
             "cmd": ". /etc/etckeeper/etckeeper.conf.dpkg-divert && echo ${LOWLEVEL_PACKAGE_MANAGER}", 
-            "delta": "0:00:00.001637", 
-            "end": "2019-01-02 17:39:29.463071", 
+            "delta": "0:00:00.001803", 
+            "end": "2019-01-02 17:47:51.729718", 
             "failed": false, 
             "failed_when_result": false, 
             "rc": 0, 
-            "start": "2019-01-02 17:39:29.461434", 
+            "start": "2019-01-02 17:47:51.727915", 
             "stderr": "", 
             "stderr_lines": [], 
             "stdout": "dpkg", 
@@ -2654,11 +2654,11 @@
         "current_timezone": {
             "changed": false, 
             "cmd": "cat /etc/timezone", 
-            "delta": "0:00:00.002000", 
-            "end": "2019-01-02 17:39:38.414766", 
+            "delta": "0:00:00.002241", 
+            "end": "2019-01-02 17:48:00.538085", 
             "failed": false, 
             "rc": 0, 
-            "start": "2019-01-02 17:39:38.412766", 
+            "start": "2019-01-02 17:48:00.535844", 
             "stderr": "", 
             "stderr_lines": [], 
             "stdout": "America/New_York", 
@@ -2669,16 +2669,16 @@
         "date": {
             "changed": false, 
             "cmd": "date", 
-            "delta": "0:00:00.002122", 
-            "end": "2019-01-02 17:39:45.234965", 
+            "delta": "0:00:00.002307", 
+            "end": "2019-01-02 17:48:07.488525", 
             "failed": false, 
             "rc": 0, 
-            "start": "2019-01-02 17:39:45.232843", 
+            "start": "2019-01-02 17:48:07.486218", 
             "stderr": "", 
             "stderr_lines": [], 
-            "stdout": "Wed Jan  2 17:39:45 EST 2019", 
+            "stdout": "Wed Jan  2 17:48:07 EST 2019", 
             "stdout_lines": [
-                "Wed Jan  2 17:39:45 EST 2019"
+                "Wed Jan  2 17:48:07 EST 2019"
             ]
         }, 
         "gather_subset": [
@@ -2974,8 +2974,8 @@
         ], 
         "groups": {
             "all": [
-                "telegraf-master-01", 
-                "localhost"
+                "localhost", 
+                "telegraf-master-01"
             ], 
             "influx_masters": [
                 "telegraf-master-01"
@@ -3044,11 +3044,11 @@
         "ntp_sync_status": {
             "changed": false, 
             "cmd": "/usr/bin/timedatectl status | grep \"NTP synchronized\"", 
-            "delta": "0:00:00.008739", 
-            "end": "2019-01-02 17:39:38.679380", 
+            "delta": "0:00:00.003461", 
+            "end": "2019-01-02 17:48:00.794585", 
             "failed": false, 
             "rc": 0, 
-            "start": "2019-01-02 17:39:38.670641", 
+            "start": "2019-01-02 17:48:00.791124", 
             "stderr": "", 
             "stderr_lines": [], 
             "stdout": "NTP synchronized: yes", 
@@ -3059,24 +3059,24 @@
         "ntpq": {
             "changed": false, 
             "cmd": "ntpq -p", 
-            "delta": "0:00:00.014776", 
-            "end": "2019-01-02 17:39:44.959436", 
+            "delta": "0:00:00.014734", 
+            "end": "2019-01-02 17:48:07.201207", 
             "failed": false, 
             "rc": 0, 
-            "start": "2019-01-02 17:39:44.944660", 
+            "start": "2019-01-02 17:48:07.186473", 
             "stderr": "", 
             "stderr_lines": [], 
-            "stdout": "     remote           refid      st t when poll reach   delay   offset  jitter\n==============================================================================\n+backoffice-1.in 144.217.75.74    3 u    8  128  377   80.717  -16.459   4.505\n-dns2.switch.ca  206.108.0.134    3 u    2  128  377   76.518  -13.995   3.205\n*ns512634.ip-167 192.168.10.254   2 u   12  128  377   21.527   -5.749   1.637\n+mailgateway.fam 192.53.103.108   2 u  123  128  377   92.568   -6.241   1.396", 
+            "stdout": "     remote           refid      st t when poll reach   delay   offset  jitter\n==============================================================================\n+backoffice-1.in 144.217.75.74    3 u  117  128  377   80.717  -16.459   3.502\n-dns2.switch.ca  206.108.0.134    3 u  110  128  377   76.518  -13.995   3.245\n*ns512634.ip-167 192.168.10.254   2 u  120  128  377   21.527   -5.749   1.873\n+mailgateway.fam 192.53.103.108   2 u  105  128  377   92.568   -6.241   2.665", 
             "stdout_lines": [
                 "     remote           refid      st t when poll reach   delay   offset  jitter", 
                 "==============================================================================", 
-                "+backoffice-1.in 144.217.75.74    3 u    8  128  377   80.717  -16.459   4.505", 
-                "-dns2.switch.ca  206.108.0.134    3 u    2  128  377   76.518  -13.995   3.205", 
-                "*ns512634.ip-167 192.168.10.254   2 u   12  128  377   21.527   -5.749   1.637", 
-                "+mailgateway.fam 192.53.103.108   2 u  123  128  377   92.568   -6.241   1.396"
+                "+backoffice-1.in 144.217.75.74    3 u  117  128  377   80.717  -16.459   3.502", 
+                "-dns2.switch.ca  206.108.0.134    3 u  110  128  377   76.518  -13.995   3.245", 
+                "*ns512634.ip-167 192.168.10.254   2 u  120  128  377   21.527   -5.749   1.873", 
+                "+mailgateway.fam 192.53.103.108   2 u  105  128  377   92.568   -6.241   2.665"
             ]
         }, 
-        "omit": "__omit_place_holder__89620b22dc77785c1a13e8760ba5177a297c62af", 
+        "omit": "__omit_place_holder__90a1fba9c64ec1f6e9354d0c7ce9c930697e3d63", 
         "playbook_dir": "/Users/malcolm/dev/bossjones/boss-ansible-role-telegraf", 
         "result": {
             "changed": false, 
@@ -3090,18 +3090,18 @@
                 "/usr/bin/timedatectl", 
                 "status"
             ], 
-            "delta": "0:00:00.002847", 
-            "end": "2019-01-02 17:39:39.508047", 
+            "delta": "0:00:00.003040", 
+            "end": "2019-01-02 17:48:01.749731", 
             "failed": false, 
             "rc": 0, 
-            "start": "2019-01-02 17:39:39.505200", 
+            "start": "2019-01-02 17:48:01.746691", 
             "stderr": "", 
             "stderr_lines": [], 
-            "stdout": "      Local time: Wed 2019-01-02 17:39:39 EST\n  Universal time: Wed 2019-01-02 22:39:39 UTC\n        RTC time: Wed 2019-01-02 22:39:34\n       Time zone: America/New_York (EST, -0500)\n Network time on: no\nNTP synchronized: yes\n RTC in local TZ: no", 
+            "stdout": "      Local time: Wed 2019-01-02 17:48:01 EST\n  Universal time: Wed 2019-01-02 22:48:01 UTC\n        RTC time: Wed 2019-01-02 22:47:56\n       Time zone: America/New_York (EST, -0500)\n Network time on: no\nNTP synchronized: yes\n RTC in local TZ: no", 
             "stdout_lines": [
-                "      Local time: Wed 2019-01-02 17:39:39 EST", 
-                "  Universal time: Wed 2019-01-02 22:39:39 UTC", 
-                "        RTC time: Wed 2019-01-02 22:39:34", 
+                "      Local time: Wed 2019-01-02 17:48:01 EST", 
+                "  Universal time: Wed 2019-01-02 22:48:01 UTC", 
+                "        RTC time: Wed 2019-01-02 22:47:56", 
                 "       Time zone: America/New_York (EST, -0500)", 
                 " Network time on: no", 
                 "NTP synchronized: yes", 
@@ -3114,18 +3114,18 @@
                 "/usr/bin/timedatectl", 
                 "status"
             ], 
-            "delta": "0:00:00.002818", 
-            "end": "2019-01-02 17:39:39.076529", 
+            "delta": "0:00:00.004780", 
+            "end": "2019-01-02 17:48:01.271414", 
             "failed": false, 
             "rc": 0, 
-            "start": "2019-01-02 17:39:39.073711", 
+            "start": "2019-01-02 17:48:01.266634", 
             "stderr": "", 
             "stderr_lines": [], 
-            "stdout": "      Local time: Wed 2019-01-02 17:39:39 EST\n  Universal time: Wed 2019-01-02 22:39:39 UTC\n        RTC time: Wed 2019-01-02 22:39:33\n       Time zone: America/New_York (EST, -0500)\n Network time on: yes\nNTP synchronized: yes\n RTC in local TZ: no", 
+            "stdout": "      Local time: Wed 2019-01-02 17:48:01 EST\n  Universal time: Wed 2019-01-02 22:48:01 UTC\n        RTC time: Wed 2019-01-02 22:47:55\n       Time zone: America/New_York (EST, -0500)\n Network time on: yes\nNTP synchronized: yes\n RTC in local TZ: no", 
             "stdout_lines": [
-                "      Local time: Wed 2019-01-02 17:39:39 EST", 
-                "  Universal time: Wed 2019-01-02 22:39:39 UTC", 
-                "        RTC time: Wed 2019-01-02 22:39:33", 
+                "      Local time: Wed 2019-01-02 17:48:01 EST", 
+                "  Universal time: Wed 2019-01-02 22:48:01 UTC", 
+                "        RTC time: Wed 2019-01-02 22:47:55", 
                 "       Time zone: America/New_York (EST, -0500)", 
                 " Network time on: yes", 
                 "NTP synchronized: yes", 
