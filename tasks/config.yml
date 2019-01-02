@@ -3,8 +3,9 @@
   template:
     src: etc/telegraf/telegraf.conf.j2
     dest: /etc/telegraf/telegraf.conf
-  become: true
-  notify: restart telegraf
+  become: True
+  notify:
+  - restart telegraf
 
 # In ansible playbooks, handlers (such as to restart a service) normally happen at the end of a run. If you need ansible to run a handler between two tasks, there is "flush_handlers".
 - name: flush handlers
