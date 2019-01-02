@@ -156,3 +156,4 @@
           enabled: False
         file:
           enabled: True
+      telagraf_config: True
