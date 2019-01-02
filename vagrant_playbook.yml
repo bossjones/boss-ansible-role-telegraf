@@ -152,6 +152,7 @@
 
   roles:
     - role: ../
-      influxdb:
-        database: telegraf
-        enabled: false
+      telegraf_outputs:
+        influxdb:
+          database: telegraf
+          enabled: false
