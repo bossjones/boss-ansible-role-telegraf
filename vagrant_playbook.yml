@@ -155,4 +155,6 @@
       telegraf_outputs:
         influxdb:
           database: telegraf
-          enabled: false
+          enabled: False
+        file:
+          enabled: True

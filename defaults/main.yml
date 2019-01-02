@@ -205,6 +205,10 @@ telegraf_inputs:
       # - localhost:2181
 
 telegraf_outputs:
+  file:
+    enabled: false
+    files: ["stdout", "/tmp/metrics.out"]
+    data_format: "influx"
   elasticsearch:
     ## HTTP basic authentication details (eg. when using Shield)
     auth:

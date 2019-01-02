@@ -66,6 +66,11 @@
 #   ## Address to listen on
   listen = "{{ telegraf_outputs.prometheus_client.listen }}"
 {% endif %}
+{% if telegraf_outputs.file.enabled %}
+[[outputs.file]]
+  files = "{{ telegraf_outputs.file.files }}"
+  data_format = "{{ telegraf_outputs.file.data_format }}"
+{% endif %}
 
 ###############################################################################
 #                            INPUT PLUGINS                                    #
