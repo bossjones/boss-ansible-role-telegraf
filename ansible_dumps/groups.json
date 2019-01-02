@@ -1,0 +1,23 @@
+{
+    "all": [
+        "telegraf-master-01", 
+        "localhost"
+    ], 
+    "influx_masters": [
+        "telegraf-master-01"
+    ], 
+    "local": [
+        "localhost"
+    ], 
+    "servers": [
+        "telegraf-master-01"
+    ], 
+    "telegraf-master-01": [
+        "telegraf-master-01"
+    ], 
+    "telegraf_masters": [
+        "telegraf-master-01"
+    ], 
+    "ungrouped": []
+}
+

@@ -1,0 +1,6 @@
+[
+    "influx_masters", 
+    "servers", 
+    "telegraf-master-01", 
+    "telegraf_masters"
+]

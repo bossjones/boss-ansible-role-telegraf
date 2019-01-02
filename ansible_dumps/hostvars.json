@@ -1,0 +1,3138 @@
+{
+    "localhost": {
+        "ansible_check_mode": false, 
+        "ansible_connection": "local", 
+        "ansible_diff_mode": false, 
+        "ansible_facts": {}, 
+        "ansible_forks": 5, 
+        "ansible_inventory_sources": [
+            "/Users/malcolm/dev/bossjones/boss-ansible-role-telegraf/inventory.ini"
+        ], 
+        "ansible_playbook_python": "/Users/malcolm/.pyenv/versions/2.7.14/envs/bosslab-playbooks2/bin/python2.7", 
+        "ansible_run_tags": [
+            "all"
+        ], 
+        "ansible_skip_tags": [], 
+        "ansible_version": {
+            "full": "2.5.14", 
+            "major": 2, 
+            "minor": 5, 
+            "revision": 14, 
+            "string": "2.5.14"
+        }, 
+        "group_names": [
+            "local"
+        ], 
+        "groups": {
+            "all": [
+                "telegraf-master-01", 
+                "localhost"
+            ], 
+            "influx_masters": [
+                "telegraf-master-01"
+            ], 
+            "local": [
+                "localhost"
+            ], 
+            "servers": [
+                "telegraf-master-01"
+            ], 
+            "telegraf-master-01": [
+                "telegraf-master-01"
+            ], 
+            "telegraf_masters": [
+                "telegraf-master-01"
+            ], 
+            "ungrouped": []
+        }, 
+        "inventory_dir": "/Users/malcolm/dev/bossjones/boss-ansible-role-telegraf", 
+        "inventory_file": "/Users/malcolm/dev/bossjones/boss-ansible-role-telegraf/inventory.ini", 
+        "inventory_hostname": "localhost", 
+        "inventory_hostname_short": "localhost", 
+        "omit": "__omit_place_holder__89620b22dc77785c1a13e8760ba5177a297c62af", 
+        "playbook_dir": "/Users/malcolm/dev/bossjones/boss-ansible-role-telegraf"
+    }, 
+    "telegraf-master-01": {
+        "_motd_ubuntu_defaults": {
+            "changed": false, 
+            "msg": "All items completed", 
+            "results": [
+                {
+                    "_ansible_ignore_errors": null, 
+                    "_ansible_item_label": "00-header", 
+                    "_ansible_item_result": true, 
+                    "_ansible_no_log": false, 
+                    "_ansible_parsed": true, 
+                    "changed": false, 
+                    "failed": false, 
+                    "invocation": {
+                        "module_args": {
+                            "checksum_algorithm": "sha1", 
+                            "follow": false, 
+                            "get_attributes": true, 
+                            "get_checksum": true, 
+                            "get_md5": null, 
+                            "get_mime": true, 
+                            "path": "/etc/update-motd.d/00-header"
+                        }
+                    }, 
+                    "item": "00-header", 
+                    "stat": {
+                        "atime": 1546466523.1385455, 
+                        "attr_flags": "e", 
+                        "attributes": [
+                            "extents"
+                        ], 
+                        "block_size": 4096, 
+                        "blocks": 8, 
+                        "charset": "us-ascii", 
+                        "checksum": "e20c30dc089afb67d9ee20e7218ac92336544fd2", 
+                        "ctime": 1546466515.6427996, 
+                        "dev": 2049, 
+                        "device_type": 0, 
+                        "executable": false, 
+                        "exists": true, 
+                        "gid": 0, 
+                        "gr_name": "root", 
+                        "inode": 304, 
+                        "isblk": false, 
+                        "ischr": false, 
+                        "isdir": false, 
+                        "isfifo": false, 
+                        "isgid": false, 
+                        "islnk": false, 
+                        "isreg": true, 
+                        "issock": false, 
+                        "isuid": false, 
+                        "mimetype": "text/x-shellscript", 
+                        "mode": "0644", 
+                        "mtime": 1445534121.0, 
+                        "nlink": 1, 
+                        "path": "/etc/update-motd.d/00-header", 
+                        "pw_name": "root", 
+                        "readable": true, 
+                        "rgrp": true, 
+                        "roth": true, 
+                        "rusr": true, 
+                        "size": 1220, 
+                        "uid": 0, 
+                        "version": "18446744072302195862", 
+                        "wgrp": false, 
+                        "woth": false, 
+                        "writeable": true, 
+                        "wusr": true, 
+                        "xgrp": false, 
+                        "xoth": false, 
+                        "xusr": false
+                    }
+                }, 
+                {
+                    "_ansible_ignore_errors": null, 
+                    "_ansible_item_label": "10-help-text", 
+                    "_ansible_item_result": true, 
+                    "_ansible_no_log": false, 
+                    "_ansible_parsed": true, 
+                    "changed": false, 
+                    "failed": false, 
+                    "invocation": {
+                        "module_args": {
+                            "checksum_algorithm": "sha1", 
+                            "follow": false, 
+                            "get_attributes": true, 
+                            "get_checksum": true, 
+                            "get_md5": null, 
+                            "get_mime": true, 
+                            "path": "/etc/update-motd.d/10-help-text"
+                        }
+                    }, 
+                    "item": "10-help-text", 
+                    "stat": {
+                        "atime": 1546466523.1385455, 
+                        "attr_flags": "e", 
+                        "attributes": [
+                            "extents"
+                        ], 
+                        "block_size": 4096, 
+                        "blocks": 8, 
+                        "charset": "us-ascii", 
+                        "checksum": "a3800960f849c60483b23fe9b7ea1eaba88db605", 
+                        "ctime": 1546466515.7588575, 
+                        "dev": 2049, 
+                        "device_type": 0, 
+                        "executable": false, 
+                        "exists": true, 
+                        "gid": 0, 
+                        "gr_name": "root", 
+                        "inode": 307, 
+                        "isblk": false, 
+                        "ischr": false, 
+                        "isdir": false, 
+                        "isfifo": false, 
+                        "isgid": false, 
+                        "islnk": false, 
+                        "isreg": true, 
+                        "issock": false, 
+                        "isuid": false, 
+                        "mimetype": "text/x-shellscript", 
+                        "mode": "0644", 
+                        "mtime": 1465906560.0, 
+                        "nlink": 1, 
+                        "path": "/etc/update-motd.d/10-help-text", 
+                        "pw_name": "root", 
+                        "readable": true, 
+                        "rgrp": true, 
+                        "roth": true, 
+                        "rusr": true, 
+                        "size": 1157, 
+                        "uid": 0, 
+                        "version": "18446744072302195865", 
+                        "wgrp": false, 
+                        "woth": false, 
+                        "writeable": true, 
+                        "wusr": true, 
+                        "xgrp": false, 
+                        "xoth": false, 
+                        "xusr": false
+                    }
+                }, 
+                {
+                    "_ansible_ignore_errors": null, 
+                    "_ansible_item_label": "91-release-upgrade", 
+                    "_ansible_item_result": true, 
+                    "_ansible_no_log": false, 
+                    "_ansible_parsed": true, 
+                    "changed": false, 
+                    "failed": false, 
+                    "invocation": {
+                        "module_args": {
+                            "checksum_algorithm": "sha1", 
+                            "follow": false, 
+                            "get_attributes": true, 
+                            "get_checksum": true, 
+                            "get_md5": null, 
+                            "get_mime": true, 
+                            "path": "/etc/update-motd.d/91-release-upgrade"
+                        }
+                    }, 
+                    "item": "91-release-upgrade", 
+                    "stat": {
+                        "atime": 1546466523.1385455, 
+                        "attr_flags": "e", 
+                        "attributes": [
+                            "extents"
+                        ], 
+                        "block_size": 4096, 
+                        "blocks": 8, 
+                        "charset": "us-ascii", 
+                        "checksum": "54353896cee3d8e88f00d89dbf2e6e4991b15112", 
+                        "ctime": 1546466515.8709135, 
+                        "dev": 2049, 
+                        "device_type": 0, 
+                        "executable": false, 
+                        "exists": true, 
+                        "gid": 0, 
+                        "gr_name": "root", 
+                        "inode": 308, 
+                        "isblk": false, 
+                        "ischr": false, 
+                        "isdir": false, 
+                        "isfifo": false, 
+                        "isgid": false, 
+                        "islnk": false, 
+                        "isreg": true, 
+                        "issock": false, 
+                        "isuid": false, 
+                        "mimetype": "text/x-shellscript", 
+                        "mode": "0644", 
+                        "mtime": 1469202467.0, 
+                        "nlink": 1, 
+                        "path": "/etc/update-motd.d/91-release-upgrade", 
+                        "pw_name": "root", 
+                        "readable": true, 
+                        "rgrp": true, 
+                        "roth": true, 
+                        "rusr": true, 
+                        "size": 299, 
+                        "uid": 0, 
+                        "version": "18446744072302195866", 
+                        "wgrp": false, 
+                        "woth": false, 
+                        "writeable": true, 
+                        "wusr": true, 
+                        "xgrp": false, 
+                        "xoth": false, 
+                        "xusr": false
+                    }
+                }
+            ]
+        }, 
+        "ansible_all_ipv4_addresses": [
+            "10.0.2.15", 
+            "192.168.40.129"
+        ], 
+        "ansible_all_ipv6_addresses": [
+            "fe80::84:93ff:fe1d:3286"
+        ], 
+        "ansible_apparmor": {
+            "status": "enabled"
+        }, 
+        "ansible_architecture": "x86_64", 
+        "ansible_bios_date": "12/01/2006", 
+        "ansible_bios_version": "VirtualBox", 
+        "ansible_check_mode": false, 
+        "ansible_cmdline": {
+            "BOOT_IMAGE": "/boot/vmlinuz-4.4.0-139-generic", 
+            "console": "ttyS0", 
+            "ro": true, 
+            "root": "LABEL=cloudimg-rootfs"
+        }, 
+        "ansible_controller": "", 
+        "ansible_date_time": {
+            "date": "2019-01-02", 
+            "day": "02", 
+            "epoch": "1546468761", 
+            "hour": "17", 
+            "iso8601": "2019-01-02T22:39:21Z", 
+            "iso8601_basic": "20190102T173921642115", 
+            "iso8601_basic_short": "20190102T173921", 
+            "iso8601_micro": "2019-01-02T22:39:21.642173Z", 
+            "minute": "39", 
+            "month": "01", 
+            "second": "21", 
+            "time": "17:39:21", 
+            "tz": "EST", 
+            "tz_offset": "-0500", 
+            "weekday": "Wednesday", 
+            "weekday_number": "3", 
+            "weeknumber": "00", 
+            "year": "2019"
+        }, 
+        "ansible_default_ipv4": {
+            "address": "10.0.2.15", 
+            "alias": "enp0s3", 
+            "broadcast": "10.0.2.255", 
+            "gateway": "10.0.2.2", 
+            "interface": "enp0s3", 
+            "macaddress": "02:84:93:1d:32:86", 
+            "mtu": 1500, 
+            "netmask": "255.255.255.0", 
+            "network": "10.0.2.0", 
+            "type": "ether"
+        }, 
+        "ansible_default_ipv6": {}, 
+        "ansible_device_links": {
+            "ids": {}, 
+            "labels": {
+                "sda1": [
+                    "cloudimg-rootfs"
+                ], 
+                "sdb": [
+                    "cidata"
+                ]
+            }, 
+            "masters": {}, 
+            "uuids": {
+                "sda1": [
+                    "d5123bd1-3647-41c3-8075-7995b09280cc"
+                ], 
+                "sdb": [
+                    "2018-11-27-08-46-01-00"
+                ]
+            }
+        }, 
+        "ansible_devices": {
+            "loop0": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "4096", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "loop1": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "loop2": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "loop3": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "loop4": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "loop5": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "loop6": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "loop7": {
+                "holders": [], 
+                "host": "", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": null, 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "", 
+                "sectors": "0", 
+                "sectorsize": "512", 
+                "size": "0.00 Bytes", 
+                "support_discard": "0", 
+                "vendor": null, 
+                "virtual": 1
+            }, 
+            "sda": {
+                "holders": [], 
+                "host": "SCSI storage controller: LSI Logic / Symbios Logic 53c1030 PCI-X Fusion-MPT Dual Ultra320 SCSI", 
+                "links": {
+                    "ids": [], 
+                    "labels": [], 
+                    "masters": [], 
+                    "uuids": []
+                }, 
+                "model": "HARDDISK", 
+                "partitions": {
+                    "sda1": {
+                        "holders": [], 
+                        "links": {
+                            "ids": [], 
+                            "labels": [
+                                "cloudimg-rootfs"
+                            ], 
+                            "masters": [], 
+                            "uuids": [
+                                "d5123bd1-3647-41c3-8075-7995b09280cc"
+                            ]
+                        }, 
+                        "sectors": "20969439", 
+                        "sectorsize": 512, 
+                        "size": "10.00 GB", 
+                        "start": "2048", 
+                        "uuid": "d5123bd1-3647-41c3-8075-7995b09280cc"
+                    }
+                }, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "20971520", 
+                "sectorsize": "512", 
+                "size": "10.00 GB", 
+                "support_discard": "0", 
+                "vendor": "VBOX", 
+                "virtual": 1
+            }, 
+            "sdb": {
+                "holders": [], 
+                "host": "SCSI storage controller: LSI Logic / Symbios Logic 53c1030 PCI-X Fusion-MPT Dual Ultra320 SCSI", 
+                "links": {
+                    "ids": [], 
+                    "labels": [
+                        "cidata"
+                    ], 
+                    "masters": [], 
+                    "uuids": [
+                        "2018-11-27-08-46-01-00"
+                    ]
+                }, 
+                "model": "HARDDISK", 
+                "partitions": {}, 
+                "removable": "0", 
+                "rotational": "1", 
+                "sas_address": null, 
+                "sas_device_handle": null, 
+                "scheduler_mode": "deadline", 
+                "sectors": "20480", 
+                "sectorsize": "512", 
+                "size": "10.00 MB", 
+                "support_discard": "0", 
+                "vendor": "VBOX", 
+                "virtual": 1
+            }
+        }, 
+        "ansible_diff_mode": false, 
+        "ansible_distribution": "Ubuntu", 
+        "ansible_distribution_file_parsed": true, 
+        "ansible_distribution_file_path": "/etc/os-release", 
+        "ansible_distribution_file_variety": "Debian", 
+        "ansible_distribution_major_version": "16", 
+        "ansible_distribution_release": "xenial", 
+        "ansible_distribution_version": "16.04", 
+        "ansible_dns": {
+            "nameservers": [
+                "10.0.2.3"
+            ]
+        }, 
+        "ansible_domain": "", 
+        "ansible_effective_group_id": 0, 
+        "ansible_effective_user_id": 0, 
+        "ansible_enp0s3": {
+            "active": true, 
+            "device": "enp0s3", 
+            "features": {
+                "busy_poll": "off [fixed]", 
+                "fcoe_mtu": "off [fixed]", 
+                "generic_receive_offload": "on", 
+                "generic_segmentation_offload": "on", 
+                "highdma": "off [fixed]", 
+                "hw_tc_offload": "off [fixed]", 
+                "l2_fwd_offload": "off [fixed]", 
+                "large_receive_offload": "off [fixed]", 
+                "loopback": "off [fixed]", 
+                "netns_local": "off [fixed]", 
+                "ntuple_filters": "off [fixed]", 
+                "receive_hashing": "off [fixed]", 
+                "rx_all": "off", 
+                "rx_checksumming": "off", 
+                "rx_fcs": "off", 
+                "rx_vlan_filter": "on [fixed]", 
+                "rx_vlan_offload": "on", 
+                "rx_vlan_stag_filter": "off [fixed]", 
+                "rx_vlan_stag_hw_parse": "off [fixed]", 
+                "scatter_gather": "on", 
+                "tcp_segmentation_offload": "on", 
+                "tx_checksum_fcoe_crc": "off [fixed]", 
+                "tx_checksum_ip_generic": "on", 
+                "tx_checksum_ipv4": "off [fixed]", 
+                "tx_checksum_ipv6": "off [fixed]", 
+                "tx_checksum_sctp": "off [fixed]", 
+                "tx_checksumming": "on", 
+                "tx_fcoe_segmentation": "off [fixed]", 
+                "tx_gre_segmentation": "off [fixed]", 
+                "tx_gso_robust": "off [fixed]", 
+                "tx_ipip_segmentation": "off [fixed]", 
+                "tx_lockless": "off [fixed]", 
+                "tx_nocache_copy": "off", 
+                "tx_scatter_gather": "on", 
+                "tx_scatter_gather_fraglist": "off [fixed]", 
+                "tx_sit_segmentation": "off [fixed]", 
+                "tx_tcp6_segmentation": "off [fixed]", 
+                "tx_tcp_ecn_segmentation": "off [fixed]", 
+                "tx_tcp_segmentation": "on", 
+                "tx_udp_tnl_segmentation": "off [fixed]", 
+                "tx_vlan_offload": "on [fixed]", 
+                "tx_vlan_stag_hw_insert": "off [fixed]", 
+                "udp_fragmentation_offload": "off [fixed]", 
+                "vlan_challenged": "off [fixed]"
+            }, 
+            "hw_timestamp_filters": [], 
+            "ipv4": {
+                "address": "10.0.2.15", 
+                "broadcast": "10.0.2.255", 
+                "netmask": "255.255.255.0", 
+                "network": "10.0.2.0"
+            }, 
+            "ipv6": [
+                {
+                    "address": "fe80::84:93ff:fe1d:3286", 
+                    "prefix": "64", 
+                    "scope": "link"
+                }
+            ], 
+            "macaddress": "02:84:93:1d:32:86", 
+            "module": "e1000", 
+            "mtu": 1500, 
+            "pciid": "0000:00:03.0", 
+            "promisc": false, 
+            "speed": 1000, 
+            "timestamping": [
+                "tx_software", 
+                "rx_software", 
+                "software"
+            ], 
+            "type": "ether"
+        }, 
+        "ansible_enp0s8": {
+            "active": true, 
+            "device": "enp0s8", 
+            "features": {
+                "busy_poll": "off [fixed]", 
+                "fcoe_mtu": "off [fixed]", 
+                "generic_receive_offload": "on", 
+                "generic_segmentation_offload": "on", 
+                "highdma": "off [fixed]", 
+                "hw_tc_offload": "off [fixed]", 
+                "l2_fwd_offload": "off [fixed]", 
+                "large_receive_offload": "off [fixed]", 
+                "loopback": "off [fixed]", 
+                "netns_local": "off [fixed]", 
+                "ntuple_filters": "off [fixed]", 
+                "receive_hashing": "off [fixed]", 
+                "rx_all": "off", 
+                "rx_checksumming": "off", 
+                "rx_fcs": "off", 
+                "rx_vlan_filter": "on [fixed]", 
+                "rx_vlan_offload": "on", 
+                "rx_vlan_stag_filter": "off [fixed]", 
+                "rx_vlan_stag_hw_parse": "off [fixed]", 
+                "scatter_gather": "on", 
+                "tcp_segmentation_offload": "on", 
+                "tx_checksum_fcoe_crc": "off [fixed]", 
+                "tx_checksum_ip_generic": "on", 
+                "tx_checksum_ipv4": "off [fixed]", 
+                "tx_checksum_ipv6": "off [fixed]", 
+                "tx_checksum_sctp": "off [fixed]", 
+                "tx_checksumming": "on", 
+                "tx_fcoe_segmentation": "off [fixed]", 
+                "tx_gre_segmentation": "off [fixed]", 
+                "tx_gso_robust": "off [fixed]", 
+                "tx_ipip_segmentation": "off [fixed]", 
+                "tx_lockless": "off [fixed]", 
+                "tx_nocache_copy": "off", 
+                "tx_scatter_gather": "on", 
+                "tx_scatter_gather_fraglist": "off [fixed]", 
+                "tx_sit_segmentation": "off [fixed]", 
+                "tx_tcp6_segmentation": "off [fixed]", 
+                "tx_tcp_ecn_segmentation": "off [fixed]", 
+                "tx_tcp_segmentation": "on", 
+                "tx_udp_tnl_segmentation": "off [fixed]", 
+                "tx_vlan_offload": "on [fixed]", 
+                "tx_vlan_stag_hw_insert": "off [fixed]", 
+                "udp_fragmentation_offload": "off [fixed]", 
+                "vlan_challenged": "off [fixed]"
+            }, 
+            "hw_timestamp_filters": [], 
+            "ipv4": {
+                "address": "192.168.40.129", 
+                "broadcast": "192.168.40.255", 
+                "netmask": "255.255.255.0", 
+                "network": "192.168.40.0"
+            }, 
+            "macaddress": "08:00:27:25:b1:70", 
+            "module": "e1000", 
+            "mtu": 1500, 
+            "pciid": "0000:00:08.0", 
+            "promisc": false, 
+            "speed": 1000, 
+            "timestamping": [
+                "tx_software", 
+                "rx_software", 
+                "software"
+            ], 
+            "type": "ether"
+        }, 
+        "ansible_env": {
+            "DEBIAN_FRONTEND": "noninteractive", 
+            "HOME": "/root", 
+            "LANG": "en_US.UTF-8", 
+            "LOGNAME": "root", 
+            "MAIL": "/var/mail/root", 
+            "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin", 
+            "PWD": "/home/vagrant", 
+            "SHELL": "/bin/bash", 
+            "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-qwnewbwazornjaqyxlxwnwqqvoezvfyr; DEBIAN_FRONTEND=noninteractive /usr/bin/python", 
+            "SUDO_GID": "1000", 
+            "SUDO_UID": "1000", 
+            "SUDO_USER": "vagrant", 
+            "TERM": "unknown", 
+            "USER": "root", 
+            "USERNAME": "root"
+        }, 
+        "ansible_facts": {
+            "all_ipv4_addresses": [
+                "10.0.2.15", 
+                "192.168.40.129"
+            ], 
+            "all_ipv6_addresses": [
+                "fe80::84:93ff:fe1d:3286"
+            ], 
+            "ansible_local": {
+                "boss__fact": {
+                    "default_section": "default", 
+                    "enabled": true, 
+                    "global": {}, 
+                    "private_facts": "/etc/ansible/boss__fact_priv.ini", 
+                    "private_section": "secret", 
+                    "public_facts": "/etc/ansible/boss__fact.ini", 
+                    "public_section": "global", 
+                    "secret": {}
+                }, 
+                "cap12s": {
+                    "enabled": "true", 
+                    "list": [
+                        "cap_chown", 
+                        "cap_dac_override", 
+                        "cap_dac_read_search", 
+                        "cap_fowner", 
+                        "cap_fsetid", 
+                        "cap_kill", 
+                        "cap_setgid", 
+                        "cap_setuid", 
+                        "cap_setpcap", 
+                        "cap_linux_immutable", 
+                        "cap_net_bind_service", 
+                        "cap_net_broadcast", 
+                        "cap_net_admin", 
+                        "cap_net_raw", 
+                        "cap_ipc_lock", 
+                        "cap_ipc_owner", 
+                        "cap_sys_module", 
+                        "cap_sys_rawio", 
+                        "cap_sys_chroot", 
+                        "cap_sys_ptrace", 
+                        "cap_sys_pacct", 
+                        "cap_sys_admin", 
+                        "cap_sys_boot", 
+                        "cap_sys_nice", 
+                        "cap_sys_resource", 
+                        "cap_sys_time", 
+                        "cap_sys_tty_config", 
+                        "cap_mknod", 
+                        "cap_lease", 
+                        "cap_audit_write", 
+                        "cap_audit_control", 
+                        "cap_setfcap", 
+                        "cap_mac_override", 
+                        "cap_mac_admin", 
+                        "cap_syslog", 
+                        "cap_wake_alarm", 
+                        "cap_block_suspend", 
+                        "37+ep"
+                    ]
+                }, 
+                "core": {
+                    "admin_groups": [
+                        "admins"
+                    ], 
+                    "admin_private_email": [
+                        "bossjones", 
+                        "vagrant"
+                    ], 
+                    "admin_public_email": [
+                        "root@telegraf-master-01"
+                    ], 
+                    "admin_users": [
+                        "bossjones", 
+                        "vagrant"
+                    ], 
+                    "cache_valid_time": "86400", 
+                    "distribution": "Ubuntu", 
+                    "distribution_release": "xenial", 
+                    "domain": "telegraf-master-01", 
+                    "fqdn": "telegraf-master-01", 
+                    "homedir_umask": "0027", 
+                    "keyserver": "hkp://pool.sks-keyservers.net", 
+                    "unsafe_writes": false
+                }, 
+                "environment": {
+                    "enabled": "false", 
+                    "variables": {}
+                }, 
+                "init": "systemd", 
+                "resolver": {
+                    "nameserver": [
+                        "10.0.2.3"
+                    ], 
+                    "search": []
+                }, 
+                "root": {
+                    "app": "/var/local", 
+                    "backup": "/var/backups", 
+                    "bin": "/usr/local/bin", 
+                    "cache": "/var/cache", 
+                    "data": "/srv", 
+                    "etc": "/usr/local/etc", 
+                    "facts": "/etc/ansible/facts.d", 
+                    "flags": [], 
+                    "home": "/var/local", 
+                    "lib": "/usr/local/lib", 
+                    "log": "/var/log", 
+                    "sbin": "/usr/local/sbin", 
+                    "share": "/usr/local/share", 
+                    "spool": "/var/spool", 
+                    "src": "/usr/local/src", 
+                    "srv": "/srv", 
+                    "uuid": "5c9011c6-5952-4d79-9111-409bb3399102", 
+                    "var": "/var/local"
+                }, 
+                "tags": [], 
+                "timezone": "America/New_York", 
+                "uuid": "5c9011c6-5952-4d79-9111-409bb3399102"
+            }, 
+            "apparmor": {
+                "status": "enabled"
+            }, 
+            "architecture": "x86_64", 
+            "bios_date": "12/01/2006", 
+            "bios_version": "VirtualBox", 
+            "cmdline": {
+                "BOOT_IMAGE": "/boot/vmlinuz-4.4.0-139-generic", 
+                "console": "ttyS0", 
+                "ro": true, 
+                "root": "LABEL=cloudimg-rootfs"
+            }, 
+            "date_time": {
+                "date": "2019-01-02", 
+                "day": "02", 
+                "epoch": "1546468761", 
+                "hour": "17", 
+                "iso8601": "2019-01-02T22:39:21Z", 
+                "iso8601_basic": "20190102T173921642115", 
+                "iso8601_basic_short": "20190102T173921", 
+                "iso8601_micro": "2019-01-02T22:39:21.642173Z", 
+                "minute": "39", 
+                "month": "01", 
+                "second": "21", 
+                "time": "17:39:21", 
+                "tz": "EST", 
+                "tz_offset": "-0500", 
+                "weekday": "Wednesday", 
+                "weekday_number": "3", 
+                "weeknumber": "00", 
+                "year": "2019"
+            }, 
+            "default_ipv4": {
+                "address": "10.0.2.15", 
+                "alias": "enp0s3", 
+                "broadcast": "10.0.2.255", 
+                "gateway": "10.0.2.2", 
+                "interface": "enp0s3", 
+                "macaddress": "02:84:93:1d:32:86", 
+                "mtu": 1500, 
+                "netmask": "255.255.255.0", 
+                "network": "10.0.2.0", 
+                "type": "ether"
+            }, 
+            "default_ipv6": {}, 
+            "device_links": {
+                "ids": {}, 
+                "labels": {
+                    "sda1": [
+                        "cloudimg-rootfs"
+                    ], 
+                    "sdb": [
+                        "cidata"
+                    ]
+                }, 
+                "masters": {}, 
+                "uuids": {
+                    "sda1": [
+                        "d5123bd1-3647-41c3-8075-7995b09280cc"
+                    ], 
+                    "sdb": [
+                        "2018-11-27-08-46-01-00"
+                    ]
+                }
+            }, 
+            "devices": {
+                "loop0": {
+                    "holders": [], 
+                    "host": "", 
+                    "links": {
+                        "ids": [], 
+                        "labels": [], 
+                        "masters": [], 
+                        "uuids": []
+                    }, 
+                    "model": null, 
+                    "partitions": {}, 
+                    "removable": "0", 
+                    "rotational": "1", 
+                    "sas_address": null, 
+                    "sas_device_handle": null, 
+                    "scheduler_mode": "", 
+                    "sectors": "0", 
+                    "sectorsize": "512", 
+                    "size": "0.00 Bytes", 
+                    "support_discard": "4096", 
+                    "vendor": null, 
+                    "virtual": 1
+                }, 
+                "loop1": {
+                    "holders": [], 
+                    "host": "", 
+                    "links": {
+                        "ids": [], 
+                        "labels": [], 
+                        "masters": [], 
+                        "uuids": []
+                    }, 
+                    "model": null, 
+                    "partitions": {}, 
+                    "removable": "0", 
+                    "rotational": "1", 
+                    "sas_address": null, 
+                    "sas_device_handle": null, 
+                    "scheduler_mode": "", 
+                    "sectors": "0", 
+                    "sectorsize": "512", 
+                    "size": "0.00 Bytes", 
+                    "support_discard": "0", 
+                    "vendor": null, 
+                    "virtual": 1
+                }, 
+                "loop2": {
+                    "holders": [], 
+                    "host": "", 
+                    "links": {
+                        "ids": [], 
+                        "labels": [], 
+                        "masters": [], 
+                        "uuids": []
+                    }, 
+                    "model": null, 
+                    "partitions": {}, 
+                    "removable": "0", 
+                    "rotational": "1", 
+                    "sas_address": null, 
+                    "sas_device_handle": null, 
+                    "scheduler_mode": "", 
+                    "sectors": "0", 
+                    "sectorsize": "512", 
+                    "size": "0.00 Bytes", 
+                    "support_discard": "0", 
+                    "vendor": null, 
+                    "virtual": 1
+                }, 
+                "loop3": {
+                    "holders": [], 
+                    "host": "", 
+                    "links": {
+                        "ids": [], 
+                        "labels": [], 
+                        "masters": [], 
+                        "uuids": []
+                    }, 
+                    "model": null, 
+                    "partitions": {}, 
+                    "removable": "0", 
+                    "rotational": "1", 
+                    "sas_address": null, 
+                    "sas_device_handle": null, 
+                    "scheduler_mode": "", 
+                    "sectors": "0", 
+                    "sectorsize": "512", 
+                    "size": "0.00 Bytes", 
+                    "support_discard": "0", 
+                    "vendor": null, 
+                    "virtual": 1
+                }, 
+                "loop4": {
+                    "holders": [], 
+                    "host": "", 
+                    "links": {
+                        "ids": [], 
+                        "labels": [], 
+                        "masters": [], 
+                        "uuids": []
+                    }, 
+                    "model": null, 
+                    "partitions": {}, 
+                    "removable": "0", 
+                    "rotational": "1", 
+                    "sas_address": null, 
+                    "sas_device_handle": null, 
+                    "scheduler_mode": "", 
+                    "sectors": "0", 
+                    "sectorsize": "512", 
+                    "size": "0.00 Bytes", 
+                    "support_discard": "0", 
+                    "vendor": null, 
+                    "virtual": 1
+                }, 
+                "loop5": {
+                    "holders": [], 
+                    "host": "", 
+                    "links": {
+                        "ids": [], 
+                        "labels": [], 
+                        "masters": [], 
+                        "uuids": []
+                    }, 
+                    "model": null, 
+                    "partitions": {}, 
+                    "removable": "0", 
+                    "rotational": "1", 
+                    "sas_address": null, 
+                    "sas_device_handle": null, 
+                    "scheduler_mode": "", 
+                    "sectors": "0", 
+                    "sectorsize": "512", 
+                    "size": "0.00 Bytes", 
+                    "support_discard": "0", 
+                    "vendor": null, 
+                    "virtual": 1
+                }, 
+                "loop6": {
+                    "holders": [], 
+                    "host": "", 
+                    "links": {
+                        "ids": [], 
+                        "labels": [], 
+                        "masters": [], 
+                        "uuids": []
+                    }, 
+                    "model": null, 
+                    "partitions": {}, 
+                    "removable": "0", 
+                    "rotational": "1", 
+                    "sas_address": null, 
+                    "sas_device_handle": null, 
+                    "scheduler_mode": "", 
+                    "sectors": "0", 
+                    "sectorsize": "512", 
+                    "size": "0.00 Bytes", 
+                    "support_discard": "0", 
+                    "vendor": null, 
+                    "virtual": 1
+                }, 
+                "loop7": {
+                    "holders": [], 
+                    "host": "", 
+                    "links": {
+                        "ids": [], 
+                        "labels": [], 
+                        "masters": [], 
+                        "uuids": []
+                    }, 
+                    "model": null, 
+                    "partitions": {}, 
+                    "removable": "0", 
+                    "rotational": "1", 
+                    "sas_address": null, 
+                    "sas_device_handle": null, 
+                    "scheduler_mode": "", 
+                    "sectors": "0", 
+                    "sectorsize": "512", 
+                    "size": "0.00 Bytes", 
+                    "support_discard": "0", 
+                    "vendor": null, 
+                    "virtual": 1
+                }, 
+                "sda": {
+                    "holders": [], 
+                    "host": "SCSI storage controller: LSI Logic / Symbios Logic 53c1030 PCI-X Fusion-MPT Dual Ultra320 SCSI", 
+                    "links": {
+                        "ids": [], 
+                        "labels": [], 
+                        "masters": [], 
+                        "uuids": []
+                    }, 
+                    "model": "HARDDISK", 
+                    "partitions": {
+                        "sda1": {
+                            "holders": [], 
+                            "links": {
+                                "ids": [], 
+                                "labels": [
+                                    "cloudimg-rootfs"
+                                ], 
+                                "masters": [], 
+                                "uuids": [
+                                    "d5123bd1-3647-41c3-8075-7995b09280cc"
+                                ]
+                            }, 
+                            "sectors": "20969439", 
+                            "sectorsize": 512, 
+                            "size": "10.00 GB", 
+                            "start": "2048", 
+                            "uuid": "d5123bd1-3647-41c3-8075-7995b09280cc"
+                        }
+                    }, 
+                    "removable": "0", 
+                    "rotational": "1", 
+                    "sas_address": null, 
+                    "sas_device_handle": null, 
+                    "scheduler_mode": "deadline", 
+                    "sectors": "20971520", 
+                    "sectorsize": "512", 
+                    "size": "10.00 GB", 
+                    "support_discard": "0", 
+                    "vendor": "VBOX", 
+                    "virtual": 1
+                }, 
+                "sdb": {
+                    "holders": [], 
+                    "host": "SCSI storage controller: LSI Logic / Symbios Logic 53c1030 PCI-X Fusion-MPT Dual Ultra320 SCSI", 
+                    "links": {
+                        "ids": [], 
+                        "labels": [
+                            "cidata"
+                        ], 
+                        "masters": [], 
+                        "uuids": [
+                            "2018-11-27-08-46-01-00"
+                        ]
+                    }, 
+                    "model": "HARDDISK", 
+                    "partitions": {}, 
+                    "removable": "0", 
+                    "rotational": "1", 
+                    "sas_address": null, 
+                    "sas_device_handle": null, 
+                    "scheduler_mode": "deadline", 
+                    "sectors": "20480", 
+                    "sectorsize": "512", 
+                    "size": "10.00 MB", 
+                    "support_discard": "0", 
+                    "vendor": "VBOX", 
+                    "virtual": 1
+                }
+            }, 
+            "distribution": "Ubuntu", 
+            "distribution_file_parsed": true, 
+            "distribution_file_path": "/etc/os-release", 
+            "distribution_file_variety": "Debian", 
+            "distribution_major_version": "16", 
+            "distribution_release": "xenial", 
+            "distribution_version": "16.04", 
+            "dns": {
+                "nameservers": [
+                    "10.0.2.3"
+                ]
+            }, 
+            "domain": "", 
+            "effective_group_id": 0, 
+            "effective_user_id": 0, 
+            "enp0s3": {
+                "active": true, 
+                "device": "enp0s3", 
+                "features": {
+                    "busy_poll": "off [fixed]", 
+                    "fcoe_mtu": "off [fixed]", 
+                    "generic_receive_offload": "on", 
+                    "generic_segmentation_offload": "on", 
+                    "highdma": "off [fixed]", 
+                    "hw_tc_offload": "off [fixed]", 
+                    "l2_fwd_offload": "off [fixed]", 
+                    "large_receive_offload": "off [fixed]", 
+                    "loopback": "off [fixed]", 
+                    "netns_local": "off [fixed]", 
+                    "ntuple_filters": "off [fixed]", 
+                    "receive_hashing": "off [fixed]", 
+                    "rx_all": "off", 
+                    "rx_checksumming": "off", 
+                    "rx_fcs": "off", 
+                    "rx_vlan_filter": "on [fixed]", 
+                    "rx_vlan_offload": "on", 
+                    "rx_vlan_stag_filter": "off [fixed]", 
+                    "rx_vlan_stag_hw_parse": "off [fixed]", 
+                    "scatter_gather": "on", 
+                    "tcp_segmentation_offload": "on", 
+                    "tx_checksum_fcoe_crc": "off [fixed]", 
+                    "tx_checksum_ip_generic": "on", 
+                    "tx_checksum_ipv4": "off [fixed]", 
+                    "tx_checksum_ipv6": "off [fixed]", 
+                    "tx_checksum_sctp": "off [fixed]", 
+                    "tx_checksumming": "on", 
+                    "tx_fcoe_segmentation": "off [fixed]", 
+                    "tx_gre_segmentation": "off [fixed]", 
+                    "tx_gso_robust": "off [fixed]", 
+                    "tx_ipip_segmentation": "off [fixed]", 
+                    "tx_lockless": "off [fixed]", 
+                    "tx_nocache_copy": "off", 
+                    "tx_scatter_gather": "on", 
+                    "tx_scatter_gather_fraglist": "off [fixed]", 
+                    "tx_sit_segmentation": "off [fixed]", 
+                    "tx_tcp6_segmentation": "off [fixed]", 
+                    "tx_tcp_ecn_segmentation": "off [fixed]", 
+                    "tx_tcp_segmentation": "on", 
+                    "tx_udp_tnl_segmentation": "off [fixed]", 
+                    "tx_vlan_offload": "on [fixed]", 
+                    "tx_vlan_stag_hw_insert": "off [fixed]", 
+                    "udp_fragmentation_offload": "off [fixed]", 
+                    "vlan_challenged": "off [fixed]"
+                }, 
+                "hw_timestamp_filters": [], 
+                "ipv4": {
+                    "address": "10.0.2.15", 
+                    "broadcast": "10.0.2.255", 
+                    "netmask": "255.255.255.0", 
+                    "network": "10.0.2.0"
+                }, 
+                "ipv6": [
+                    {
+                        "address": "fe80::84:93ff:fe1d:3286", 
+                        "prefix": "64", 
+                        "scope": "link"
+                    }
+                ], 
+                "macaddress": "02:84:93:1d:32:86", 
+                "module": "e1000", 
+                "mtu": 1500, 
+                "pciid": "0000:00:03.0", 
+                "promisc": false, 
+                "speed": 1000, 
+                "timestamping": [
+                    "tx_software", 
+                    "rx_software", 
+                    "software"
+                ], 
+                "type": "ether"
+            }, 
+            "enp0s8": {
+                "active": true, 
+                "device": "enp0s8", 
+                "features": {
+                    "busy_poll": "off [fixed]", 
+                    "fcoe_mtu": "off [fixed]", 
+                    "generic_receive_offload": "on", 
+                    "generic_segmentation_offload": "on", 
+                    "highdma": "off [fixed]", 
+                    "hw_tc_offload": "off [fixed]", 
+                    "l2_fwd_offload": "off [fixed]", 
+                    "large_receive_offload": "off [fixed]", 
+                    "loopback": "off [fixed]", 
+                    "netns_local": "off [fixed]", 
+                    "ntuple_filters": "off [fixed]", 
+                    "receive_hashing": "off [fixed]", 
+                    "rx_all": "off", 
+                    "rx_checksumming": "off", 
+                    "rx_fcs": "off", 
+                    "rx_vlan_filter": "on [fixed]", 
+                    "rx_vlan_offload": "on", 
+                    "rx_vlan_stag_filter": "off [fixed]", 
+                    "rx_vlan_stag_hw_parse": "off [fixed]", 
+                    "scatter_gather": "on", 
+                    "tcp_segmentation_offload": "on", 
+                    "tx_checksum_fcoe_crc": "off [fixed]", 
+                    "tx_checksum_ip_generic": "on", 
+                    "tx_checksum_ipv4": "off [fixed]", 
+                    "tx_checksum_ipv6": "off [fixed]", 
+                    "tx_checksum_sctp": "off [fixed]", 
+                    "tx_checksumming": "on", 
+                    "tx_fcoe_segmentation": "off [fixed]", 
+                    "tx_gre_segmentation": "off [fixed]", 
+                    "tx_gso_robust": "off [fixed]", 
+                    "tx_ipip_segmentation": "off [fixed]", 
+                    "tx_lockless": "off [fixed]", 
+                    "tx_nocache_copy": "off", 
+                    "tx_scatter_gather": "on", 
+                    "tx_scatter_gather_fraglist": "off [fixed]", 
+                    "tx_sit_segmentation": "off [fixed]", 
+                    "tx_tcp6_segmentation": "off [fixed]", 
+                    "tx_tcp_ecn_segmentation": "off [fixed]", 
+                    "tx_tcp_segmentation": "on", 
+                    "tx_udp_tnl_segmentation": "off [fixed]", 
+                    "tx_vlan_offload": "on [fixed]", 
+                    "tx_vlan_stag_hw_insert": "off [fixed]", 
+                    "udp_fragmentation_offload": "off [fixed]", 
+                    "vlan_challenged": "off [fixed]"
+                }, 
+                "hw_timestamp_filters": [], 
+                "ipv4": {
+                    "address": "192.168.40.129", 
+                    "broadcast": "192.168.40.255", 
+                    "netmask": "255.255.255.0", 
+                    "network": "192.168.40.0"
+                }, 
+                "macaddress": "08:00:27:25:b1:70", 
+                "module": "e1000", 
+                "mtu": 1500, 
+                "pciid": "0000:00:08.0", 
+                "promisc": false, 
+                "speed": 1000, 
+                "timestamping": [
+                    "tx_software", 
+                    "rx_software", 
+                    "software"
+                ], 
+                "type": "ether"
+            }, 
+            "env": {
+                "DEBIAN_FRONTEND": "noninteractive", 
+                "HOME": "/root", 
+                "LANG": "en_US.UTF-8", 
+                "LOGNAME": "root", 
+                "MAIL": "/var/mail/root", 
+                "PATH": "/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin", 
+                "PWD": "/home/vagrant", 
+                "SHELL": "/bin/bash", 
+                "SUDO_COMMAND": "/bin/sh -c echo BECOME-SUCCESS-qwnewbwazornjaqyxlxwnwqqvoezvfyr; DEBIAN_FRONTEND=noninteractive /usr/bin/python", 
+                "SUDO_GID": "1000", 
+                "SUDO_UID": "1000", 
+                "SUDO_USER": "vagrant", 
+                "TERM": "unknown", 
+                "USER": "root", 
+                "USERNAME": "root"
+            }, 
+            "fips": false, 
+            "form_factor": "Other", 
+            "fqdn": "telegraf-master-01", 
+            "gather_subset": [
+                "all"
+            ], 
+            "getent_passwd": {
+                "_apt": [
+                    "x", 
+                    "105", 
+                    "65534", 
+                    "", 
+                    "/nonexistent", 
+                    "/bin/false"
+                ], 
+                "backup": [
+                    "x", 
+                    "34", 
+                    "34", 
+                    "backup", 
+                    "/var/backups", 
+                    "/usr/sbin/nologin"
+                ], 
+                "bin": [
+                    "x", 
+                    "2", 
+                    "2", 
+                    "bin", 
+                    "/bin", 
+                    "/usr/sbin/nologin"
+                ], 
+                "bossjones": [
+                    "x", 
+                    "1002", 
+                    "100", 
+                    "System Administrator", 
+                    "/home/bossjones", 
+                    "/bin/bash"
+                ], 
+                "daemon": [
+                    "x", 
+                    "1", 
+                    "1", 
+                    "daemon", 
+                    "/usr/sbin", 
+                    "/usr/sbin/nologin"
+                ], 
+                "dnsmasq": [
+                    "x", 
+                    "109", 
+                    "65534", 
+                    "dnsmasq,,,", 
+                    "/var/lib/misc", 
+                    "/bin/false"
+                ], 
+                "games": [
+                    "x", 
+                    "5", 
+                    "60", 
+                    "games", 
+                    "/usr/games", 
+                    "/usr/sbin/nologin"
+                ], 
+                "gnats": [
+                    "x", 
+                    "41", 
+                    "41", 
+                    "Gnats Bug-Reporting System (admin)", 
+                    "/var/lib/gnats", 
+                    "/usr/sbin/nologin"
+                ], 
+                "irc": [
+                    "x", 
+                    "39", 
+                    "39", 
+                    "ircd", 
+                    "/var/run/ircd", 
+                    "/usr/sbin/nologin"
+                ], 
+                "list": [
+                    "x", 
+                    "38", 
+                    "38", 
+                    "Mailing List Manager", 
+                    "/var/list", 
+                    "/usr/sbin/nologin"
+                ], 
+                "lp": [
+                    "x", 
+                    "7", 
+                    "7", 
+                    "lp", 
+                    "/var/spool/lpd", 
+                    "/usr/sbin/nologin"
+                ], 
+                "lxd": [
+                    "x", 
+                    "106", 
+                    "65534", 
+                    "", 
+                    "/var/lib/lxd/", 
+                    "/bin/false"
+                ], 
+                "mail": [
+                    "x", 
+                    "8", 
+                    "8", 
+                    "mail", 
+                    "/var/mail", 
+                    "/usr/sbin/nologin"
+                ], 
+                "man": [
+                    "x", 
+                    "6", 
+                    "12", 
+                    "man", 
+                    "/var/cache/man", 
+                    "/usr/sbin/nologin"
+                ], 
+                "messagebus": [
+                    "x", 
+                    "107", 
+                    "111", 
+                    "", 
+                    "/var/run/dbus", 
+                    "/bin/false"
+                ], 
+                "news": [
+                    "x", 
+                    "9", 
+                    "9", 
+                    "news", 
+                    "/var/spool/news", 
+                    "/usr/sbin/nologin"
+                ], 
+                "nobody": [
+                    "x", 
+                    "65534", 
+                    "65534", 
+                    "nobody", 
+                    "/nonexistent", 
+                    "/usr/sbin/nologin"
+                ], 
+                "ntp": [
+                    "x", 
+                    "112", 
+                    "117", 
+                    "", 
+                    "/home/ntp", 
+                    "/bin/false"
+                ], 
+                "pollinate": [
+                    "x", 
+                    "111", 
+                    "1", 
+                    "", 
+                    "/var/cache/pollinate", 
+                    "/bin/false"
+                ], 
+                "proxy": [
+                    "x", 
+                    "13", 
+                    "13", 
+                    "proxy", 
+                    "/bin", 
+                    "/usr/sbin/nologin"
+                ], 
+                "root": [
+                    "x", 
+                    "0", 
+                    "0", 
+                    "root", 
+                    "/root", 
+                    "/bin/bash"
+                ], 
+                "sshd": [
+                    "x", 
+                    "110", 
+                    "65534", 
+                    "", 
+                    "/var/run/sshd", 
+                    "/usr/sbin/nologin"
+                ], 
+                "sync": [
+                    "x", 
+                    "4", 
+                    "65534", 
+                    "sync", 
+                    "/bin", 
+                    "/bin/sync"
+                ], 
+                "sys": [
+                    "x", 
+                    "3", 
+                    "3", 
+                    "sys", 
+                    "/dev", 
+                    "/usr/sbin/nologin"
+                ], 
+                "syslog": [
+                    "x", 
+                    "104", 
+                    "108", 
+                    "", 
+                    "/home/syslog", 
+                    "/bin/false"
+                ], 
+                "systemd-bus-proxy": [
+                    "x", 
+                    "103", 
+                    "105", 
+                    "systemd Bus Proxy,,,", 
+                    "/run/systemd", 
+                    "/bin/false"
+                ], 
+                "systemd-network": [
+                    "x", 
+                    "101", 
+                    "103", 
+                    "systemd Network Management,,,", 
+                    "/run/systemd/netif", 
+                    "/bin/false"
+                ], 
+                "systemd-resolve": [
+                    "x", 
+                    "102", 
+                    "104", 
+                    "systemd Resolver,,,", 
+                    "/run/systemd/resolve", 
+                    "/bin/false"
+                ], 
+                "systemd-timesync": [
+                    "x", 
+                    "100", 
+                    "102", 
+                    "systemd Time Synchronization,,,", 
+                    "/run/systemd", 
+                    "/bin/false"
+                ], 
+                "telegraf": [
+                    "x", 
+                    "999", 
+                    "997", 
+                    "", 
+                    "/etc/telegraf", 
+                    "/bin/false"
+                ], 
+                "ubuntu": [
+                    "x", 
+                    "1001", 
+                    "1001", 
+                    "Ubuntu", 
+                    "/home/ubuntu", 
+                    "/bin/bash"
+                ], 
+                "uucp": [
+                    "x", 
+                    "10", 
+                    "10", 
+                    "uucp", 
+                    "/var/spool/uucp", 
+                    "/usr/sbin/nologin"
+                ], 
+                "uuidd": [
+                    "x", 
+                    "108", 
+                    "112", 
+                    "", 
+                    "/run/uuidd", 
+                    "/bin/false"
+                ], 
+                "vagrant": [
+                    "x", 
+                    "1000", 
+                    "1000", 
+                    ",,,", 
+                    "/home/vagrant", 
+                    "/bin/bash"
+                ], 
+                "www-data": [
+                    "x", 
+                    "33", 
+                    "33", 
+                    "www-data", 
+                    "/var/www", 
+                    "/usr/sbin/nologin"
+                ]
+            }, 
+            "hostname": "telegraf-master-01", 
+            "interfaces": [
+                "lo", 
+                "enp0s3", 
+                "enp0s8"
+            ], 
+            "is_chroot": false, 
+            "kernel": "4.4.0-139-generic", 
+            "lo": {
+                "active": true, 
+                "device": "lo", 
+                "features": {
+                    "busy_poll": "off [fixed]", 
+                    "fcoe_mtu": "off [fixed]", 
+                    "generic_receive_offload": "on", 
+                    "generic_segmentation_offload": "on", 
+                    "highdma": "on [fixed]", 
+                    "hw_tc_offload": "off [fixed]", 
+                    "l2_fwd_offload": "off [fixed]", 
+                    "large_receive_offload": "off [fixed]", 
+                    "loopback": "on [fixed]", 
+                    "netns_local": "on [fixed]", 
+                    "ntuple_filters": "off [fixed]", 
+                    "receive_hashing": "off [fixed]", 
+                    "rx_all": "off [fixed]", 
+                    "rx_checksumming": "on [fixed]", 
+                    "rx_fcs": "off [fixed]", 
+                    "rx_vlan_filter": "off [fixed]", 
+                    "rx_vlan_offload": "off [fixed]", 
+                    "rx_vlan_stag_filter": "off [fixed]", 
+                    "rx_vlan_stag_hw_parse": "off [fixed]", 
+                    "scatter_gather": "on", 
+                    "tcp_segmentation_offload": "on", 
+                    "tx_checksum_fcoe_crc": "off [fixed]", 
+                    "tx_checksum_ip_generic": "on [fixed]", 
+                    "tx_checksum_ipv4": "off [fixed]", 
+                    "tx_checksum_ipv6": "off [fixed]", 
+                    "tx_checksum_sctp": "on [fixed]", 
+                    "tx_checksumming": "on", 
+                    "tx_fcoe_segmentation": "off [fixed]", 
+                    "tx_gre_segmentation": "off [fixed]", 
+                    "tx_gso_robust": "off [fixed]", 
+                    "tx_ipip_segmentation": "off [fixed]", 
+                    "tx_lockless": "on [fixed]", 
+                    "tx_nocache_copy": "off [fixed]", 
+                    "tx_scatter_gather": "on [fixed]", 
+                    "tx_scatter_gather_fraglist": "on [fixed]", 
+                    "tx_sit_segmentation": "off [fixed]", 
+                    "tx_tcp6_segmentation": "on", 
+                    "tx_tcp_ecn_segmentation": "on", 
+                    "tx_tcp_segmentation": "on", 
+                    "tx_udp_tnl_segmentation": "off [fixed]", 
+                    "tx_vlan_offload": "off [fixed]", 
+                    "tx_vlan_stag_hw_insert": "off [fixed]", 
+                    "udp_fragmentation_offload": "on", 
+                    "vlan_challenged": "on [fixed]"
+                }, 
+                "hw_timestamp_filters": [], 
+                "ipv4": {
+                    "address": "127.0.0.1", 
+                    "broadcast": "host", 
+                    "netmask": "255.0.0.0", 
+                    "network": "127.0.0.0"
+                }, 
+                "ipv6": [
+                    {
+                        "address": "::1", 
+                        "prefix": "128", 
+                        "scope": "host"
+                    }
+                ], 
+                "mtu": 65536, 
+                "promisc": false, 
+                "timestamping": [
+                    "rx_software", 
+                    "software"
+                ], 
+                "type": "loopback"
+            }, 
+            "lsb": {
+                "codename": "xenial", 
+                "description": "Ubuntu 16.04.5 LTS", 
+                "id": "Ubuntu", 
+                "major_release": "16", 
+                "release": "16.04"
+            }, 
+            "lvm": {
+                "lvs": {}, 
+                "pvs": {}, 
+                "vgs": {}
+            }, 
+            "machine": "x86_64", 
+            "machine_id": "1923441338fe4ce9ad2e6dfcb7794176", 
+            "memfree_mb": 1065, 
+            "memory_mb": {
+                "nocache": {
+                    "free": 1842, 
+                    "used": 158
+                }, 
+                "real": {
+                    "free": 1065, 
+                    "total": 2000, 
+                    "used": 935
+                }, 
+                "swap": {
+                    "cached": 0, 
+                    "free": 0, 
+                    "total": 0, 
+                    "used": 0
+                }
+            }, 
+            "memtotal_mb": 2000, 
+            "module_setup": true, 
+            "mounts": [
+                {
+                    "block_available": 2167156, 
+                    "block_size": 4096, 
+                    "block_total": 2524617, 
+                    "block_used": 357461, 
+                    "device": "/dev/sda1", 
+                    "fstype": "ext4", 
+                    "inode_available": 1209657, 
+                    "inode_total": 1280000, 
+                    "inode_used": 70343, 
+                    "mount": "/", 
+                    "options": "rw,relatime,data=ordered", 
+                    "size_available": 8876670976, 
+                    "size_total": 10340831232, 
+                    "uuid": "d5123bd1-3647-41c3-8075-7995b09280cc"
+                }
+            ], 
+            "nodename": "telegraf-master-01", 
+            "os_family": "Debian", 
+            "pkg_mgr": "apt", 
+            "processor": [
+                "0", 
+                "GenuineIntel", 
+                "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz", 
+                "1", 
+                "GenuineIntel", 
+                "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz"
+            ], 
+            "processor_cores": 2, 
+            "processor_count": 1, 
+            "processor_threads_per_core": 1, 
+            "processor_vcpus": 2, 
+            "product_name": "VirtualBox", 
+            "product_serial": "0", 
+            "product_uuid": "5C9011C6-5952-4D79-9111-409BB3399102", 
+            "product_version": "1.2", 
+            "python": {
+                "executable": "/usr/bin/python", 
+                "has_sslcontext": true, 
+                "type": "CPython", 
+                "version": {
+                    "major": 2, 
+                    "micro": 12, 
+                    "minor": 7, 
+                    "releaselevel": "final", 
+                    "serial": 0
+                }, 
+                "version_info": [
+                    2, 
+                    7, 
+                    12, 
+                    "final", 
+                    0
+                ]
+            }, 
+            "python_version": "2.7.12", 
+            "real_group_id": 0, 
+            "real_user_id": 0, 
+            "selinux": {
+                "status": "Missing selinux Python library"
+            }, 
+            "selinux_python_present": false, 
+            "service_mgr": "systemd", 
+            "ssh_host_key_dsa_public": "AAAAB3NzaC1kc3MAAACBAMsT3Sy5hKcVdbxL06o1CCI+Px4pFpFvePcK8Yn4iCCnu+lAjUi1yO9pWAnZcyP1VRogU9w9BPm7X/5wE3z4x8ojnoHcH7b2iXBTt9BtS/Xt00OVYpwELCyp48c2NtNn3Wf3bgoGOL1tjoasZONvq4PaB9spfT/P58i+2AdIG/t1AAAAFQDvULhT3kNFpbwcqon8yBmjMz3CLQAAAIEArm7ioeXgIrPkkJjPGLtbx9Ecbvcp8Ms8rGnk7N6N3/TRUH6ftcSbvEN8mhBmwHLg+98UN165f4Qq1bweZ+YmYVb5rjaFVF0CGQtiplOLb8osU4gh704xm3hfq23cBv59p4Y8ntCPhFQXg3LmjSPZtFM8a8yY5i/hxysaja80dycAAACAK9hcZ4zrjFFLeQCqRRk32uvqhS4d+3kx2M4+ajxFG1srIchBqO4G/MwihvrwMcLLAfpKQhymKR6LV4E/YYtxaBM2ttEZGYbmI7CTocYIEmusWeHs9+pltlR10P40tYMJEmZScOQibsyO1fkvBGsJIlNNsvh6QWp0CXaZAqRW8XI=", 
+            "ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBi6yGSGluUyiCirD6aKbYOywTD/PGTD7ZzQ4PsSKfwGIkzK6lIc+x0QtAnR4SptjTzcUtCNKxbfl1cFsGXHXTA=", 
+            "ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIK8L605bLhWAwRgzTYNpGtPPdcoNQwmOyvQTTvMI8uSo", 
+            "ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQCeO3M1fLA9LscfA+Mku4PSUjXg8tneDrx4dRBhccl9nLe33Lo1ZxZAHYVVCdhXdtRVy+ewprQ3TTf6Nh+tlATMVaHnWJvl772eydL0u2u5MPNMBed5Iyko1txSTXiUEi8SZors1+ansJLybZu8dYnGNrjbBwNpd69A1ScuovswTvE4RHV0wQBZ+hU73kkSN6HhZEvoeXZuj2kS+qA/06wYNmzoAE9I1vCk/U/szuEwixtCA6SKY/MGO988zpoJzYQKCsPtaMJ4z4XY/ykO29nPQjkrYf9sjhXgHGmF73NnjZhQpUArb4QxXQO2kqOR9vR15ugldVol7WsLV2YZsjDl", 
+            "swapfree_mb": 0, 
+            "swaptotal_mb": 0, 
+            "system": "Linux", 
+            "system_capabilities": [
+                "cap_chown", 
+                "cap_dac_override", 
+                "cap_dac_read_search", 
+                "cap_fowner", 
+                "cap_fsetid", 
+                "cap_kill", 
+                "cap_setgid", 
+                "cap_setuid", 
+                "cap_setpcap", 
+                "cap_linux_immutable", 
+                "cap_net_bind_service", 
+                "cap_net_broadcast", 
+                "cap_net_admin", 
+                "cap_net_raw", 
+                "cap_ipc_lock", 
+                "cap_ipc_owner", 
+                "cap_sys_module", 
+                "cap_sys_rawio", 
+                "cap_sys_chroot", 
+                "cap_sys_ptrace", 
+                "cap_sys_pacct", 
+                "cap_sys_admin", 
+                "cap_sys_boot", 
+                "cap_sys_nice", 
+                "cap_sys_resource", 
+                "cap_sys_time", 
+                "cap_sys_tty_config", 
+                "cap_mknod", 
+                "cap_lease", 
+                "cap_audit_write", 
+                "cap_audit_control", 
+                "cap_setfcap", 
+                "cap_mac_override", 
+                "cap_mac_admin", 
+                "cap_syslog", 
+                "cap_wake_alarm", 
+                "cap_block_suspend", 
+                "37+ep"
+            ], 
+            "system_capabilities_enforced": "True", 
+            "system_vendor": "innotek GmbH", 
+            "uptime_seconds": 2342, 
+            "user_dir": "/root", 
+            "user_gecos": "root", 
+            "user_gid": 0, 
+            "user_id": "root", 
+            "user_shell": "/bin/bash", 
+            "user_uid": 0, 
+            "userspace_architecture": "x86_64", 
+            "userspace_bits": "64", 
+            "virtualization_role": "guest", 
+            "virtualization_type": "virtualbox"
+        }, 
+        "ansible_fips": false, 
+        "ansible_forks": 5, 
+        "ansible_form_factor": "Other", 
+        "ansible_fqdn": "telegraf-master-01", 
+        "ansible_hostname": "telegraf-master-01", 
+        "ansible_interfaces": [
+            "lo", 
+            "enp0s3", 
+            "enp0s8"
+        ], 
+        "ansible_inventory_sources": [
+            "/Users/malcolm/dev/bossjones/boss-ansible-role-telegraf/inventory.ini"
+        ], 
+        "ansible_is_chroot": false, 
+        "ansible_kernel": "4.4.0-139-generic", 
+        "ansible_lo": {
+            "active": true, 
+            "device": "lo", 
+            "features": {
+                "busy_poll": "off [fixed]", 
+                "fcoe_mtu": "off [fixed]", 
+                "generic_receive_offload": "on", 
+                "generic_segmentation_offload": "on", 
+                "highdma": "on [fixed]", 
+                "hw_tc_offload": "off [fixed]", 
+                "l2_fwd_offload": "off [fixed]", 
+                "large_receive_offload": "off [fixed]", 
+                "loopback": "on [fixed]", 
+                "netns_local": "on [fixed]", 
+                "ntuple_filters": "off [fixed]", 
+                "receive_hashing": "off [fixed]", 
+                "rx_all": "off [fixed]", 
+                "rx_checksumming": "on [fixed]", 
+                "rx_fcs": "off [fixed]", 
+                "rx_vlan_filter": "off [fixed]", 
+                "rx_vlan_offload": "off [fixed]", 
+                "rx_vlan_stag_filter": "off [fixed]", 
+                "rx_vlan_stag_hw_parse": "off [fixed]", 
+                "scatter_gather": "on", 
+                "tcp_segmentation_offload": "on", 
+                "tx_checksum_fcoe_crc": "off [fixed]", 
+                "tx_checksum_ip_generic": "on [fixed]", 
+                "tx_checksum_ipv4": "off [fixed]", 
+                "tx_checksum_ipv6": "off [fixed]", 
+                "tx_checksum_sctp": "on [fixed]", 
+                "tx_checksumming": "on", 
+                "tx_fcoe_segmentation": "off [fixed]", 
+                "tx_gre_segmentation": "off [fixed]", 
+                "tx_gso_robust": "off [fixed]", 
+                "tx_ipip_segmentation": "off [fixed]", 
+                "tx_lockless": "on [fixed]", 
+                "tx_nocache_copy": "off [fixed]", 
+                "tx_scatter_gather": "on [fixed]", 
+                "tx_scatter_gather_fraglist": "on [fixed]", 
+                "tx_sit_segmentation": "off [fixed]", 
+                "tx_tcp6_segmentation": "on", 
+                "tx_tcp_ecn_segmentation": "on", 
+                "tx_tcp_segmentation": "on", 
+                "tx_udp_tnl_segmentation": "off [fixed]", 
+                "tx_vlan_offload": "off [fixed]", 
+                "tx_vlan_stag_hw_insert": "off [fixed]", 
+                "udp_fragmentation_offload": "on", 
+                "vlan_challenged": "on [fixed]"
+            }, 
+            "hw_timestamp_filters": [], 
+            "ipv4": {
+                "address": "127.0.0.1", 
+                "broadcast": "host", 
+                "netmask": "255.0.0.0", 
+                "network": "127.0.0.0"
+            }, 
+            "ipv6": [
+                {
+                    "address": "::1", 
+                    "prefix": "128", 
+                    "scope": "host"
+                }
+            ], 
+            "mtu": 65536, 
+            "promisc": false, 
+            "timestamping": [
+                "rx_software", 
+                "software"
+            ], 
+            "type": "loopback"
+        }, 
+        "ansible_local": {
+            "boss__fact": {
+                "default_section": "default", 
+                "enabled": true, 
+                "global": {}, 
+                "private_facts": "/etc/ansible/boss__fact_priv.ini", 
+                "private_section": "secret", 
+                "public_facts": "/etc/ansible/boss__fact.ini", 
+                "public_section": "global", 
+                "secret": {}
+            }, 
+            "cap12s": {
+                "enabled": "true", 
+                "list": [
+                    "cap_chown", 
+                    "cap_dac_override", 
+                    "cap_dac_read_search", 
+                    "cap_fowner", 
+                    "cap_fsetid", 
+                    "cap_kill", 
+                    "cap_setgid", 
+                    "cap_setuid", 
+                    "cap_setpcap", 
+                    "cap_linux_immutable", 
+                    "cap_net_bind_service", 
+                    "cap_net_broadcast", 
+                    "cap_net_admin", 
+                    "cap_net_raw", 
+                    "cap_ipc_lock", 
+                    "cap_ipc_owner", 
+                    "cap_sys_module", 
+                    "cap_sys_rawio", 
+                    "cap_sys_chroot", 
+                    "cap_sys_ptrace", 
+                    "cap_sys_pacct", 
+                    "cap_sys_admin", 
+                    "cap_sys_boot", 
+                    "cap_sys_nice", 
+                    "cap_sys_resource", 
+                    "cap_sys_time", 
+                    "cap_sys_tty_config", 
+                    "cap_mknod", 
+                    "cap_lease", 
+                    "cap_audit_write", 
+                    "cap_audit_control", 
+                    "cap_setfcap", 
+                    "cap_mac_override", 
+                    "cap_mac_admin", 
+                    "cap_syslog", 
+                    "cap_wake_alarm", 
+                    "cap_block_suspend", 
+                    "37+ep"
+                ]
+            }, 
+            "core": {
+                "admin_groups": [
+                    "admins"
+                ], 
+                "admin_private_email": [
+                    "bossjones", 
+                    "vagrant"
+                ], 
+                "admin_public_email": [
+                    "root@telegraf-master-01"
+                ], 
+                "admin_users": [
+                    "bossjones", 
+                    "vagrant"
+                ], 
+                "cache_valid_time": "86400", 
+                "distribution": "Ubuntu", 
+                "distribution_release": "xenial", 
+                "domain": "telegraf-master-01", 
+                "fqdn": "telegraf-master-01", 
+                "homedir_umask": "0027", 
+                "keyserver": "hkp://pool.sks-keyservers.net", 
+                "unsafe_writes": false
+            }, 
+            "environment": {
+                "enabled": "false", 
+                "variables": {}
+            }, 
+            "init": "systemd", 
+            "resolver": {
+                "nameserver": [
+                    "10.0.2.3"
+                ], 
+                "search": []
+            }, 
+            "root": {
+                "app": "/var/local", 
+                "backup": "/var/backups", 
+                "bin": "/usr/local/bin", 
+                "cache": "/var/cache", 
+                "data": "/srv", 
+                "etc": "/usr/local/etc", 
+                "facts": "/etc/ansible/facts.d", 
+                "flags": [], 
+                "home": "/var/local", 
+                "lib": "/usr/local/lib", 
+                "log": "/var/log", 
+                "sbin": "/usr/local/sbin", 
+                "share": "/usr/local/share", 
+                "spool": "/var/spool", 
+                "src": "/usr/local/src", 
+                "srv": "/srv", 
+                "uuid": "5c9011c6-5952-4d79-9111-409bb3399102", 
+                "var": "/var/local"
+            }, 
+            "tags": [], 
+            "timezone": "America/New_York", 
+            "uuid": "5c9011c6-5952-4d79-9111-409bb3399102"
+        }, 
+        "ansible_lsb": {
+            "codename": "xenial", 
+            "description": "Ubuntu 16.04.5 LTS", 
+            "id": "Ubuntu", 
+            "major_release": "16", 
+            "release": "16.04"
+        }, 
+        "ansible_lvm": {
+            "lvs": {}, 
+            "pvs": {}, 
+            "vgs": {}
+        }, 
+        "ansible_machine": "x86_64", 
+        "ansible_machine_id": "1923441338fe4ce9ad2e6dfcb7794176", 
+        "ansible_memfree_mb": 1065, 
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 1842, 
+                "used": 158
+            }, 
+            "real": {
+                "free": 1065, 
+                "total": 2000, 
+                "used": 935
+            }, 
+            "swap": {
+                "cached": 0, 
+                "free": 0, 
+                "total": 0, 
+                "used": 0
+            }
+        }, 
+        "ansible_memtotal_mb": 2000, 
+        "ansible_mounts": [
+            {
+                "block_available": 2167156, 
+                "block_size": 4096, 
+                "block_total": 2524617, 
+                "block_used": 357461, 
+                "device": "/dev/sda1", 
+                "fstype": "ext4", 
+                "inode_available": 1209657, 
+                "inode_total": 1280000, 
+                "inode_used": 70343, 
+                "mount": "/", 
+                "options": "rw,relatime,data=ordered", 
+                "size_available": 8876670976, 
+                "size_total": 10340831232, 
+                "uuid": "d5123bd1-3647-41c3-8075-7995b09280cc"
+            }
+        ], 
+        "ansible_nodename": "telegraf-master-01", 
+        "ansible_os_family": "Debian", 
+        "ansible_pkg_mgr": "apt", 
+        "ansible_playbook_python": "/Users/malcolm/.pyenv/versions/2.7.14/envs/bosslab-playbooks2/bin/python2.7", 
+        "ansible_processor": [
+            "0", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz", 
+            "1", 
+            "GenuineIntel", 
+            "Intel(R) Core(TM) i7-7820HQ CPU @ 2.90GHz"
+        ], 
+        "ansible_processor_cores": 2, 
+        "ansible_processor_count": 1, 
+        "ansible_processor_threads_per_core": 1, 
+        "ansible_processor_vcpus": 2, 
+        "ansible_product_name": "VirtualBox", 
+        "ansible_product_serial": "0", 
+        "ansible_product_uuid": "5C9011C6-5952-4D79-9111-409BB3399102", 
+        "ansible_product_version": "1.2", 
+        "ansible_python": {
+            "executable": "/usr/bin/python", 
+            "has_sslcontext": true, 
+            "type": "CPython", 
+            "version": {
+                "major": 2, 
+                "micro": 12, 
+                "minor": 7, 
+                "releaselevel": "final", 
+                "serial": 0
+            }, 
+            "version_info": [
+                2, 
+                7, 
+                12, 
+                "final", 
+                0
+            ]
+        }, 
+        "ansible_python_version": "2.7.12", 
+        "ansible_real_group_id": 0, 
+        "ansible_real_user_id": 0, 
+        "ansible_run_tags": [
+            "all"
+        ], 
+        "ansible_selinux": {
+            "status": "Missing selinux Python library"
+        }, 
+        "ansible_selinux_python_present": false, 
+        "ansible_service_mgr": "systemd", 
+        "ansible_skip_tags": [], 
+        "ansible_ssh_common_args": "-o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o PasswordAuthentication=no -o ControlMaster=auto -o ControlPersist=60s -o ControlPath=~/.ansible/cp/ansible-ssh-%h-%p-%r", 
+        "ansible_ssh_host": "telegraf-master-01", 
+        "ansible_ssh_host_key_dsa_public": "AAAAB3NzaC1kc3MAAACBAMsT3Sy5hKcVdbxL06o1CCI+Px4pFpFvePcK8Yn4iCCnu+lAjUi1yO9pWAnZcyP1VRogU9w9BPm7X/5wE3z4x8ojnoHcH7b2iXBTt9BtS/Xt00OVYpwELCyp48c2NtNn3Wf3bgoGOL1tjoasZONvq4PaB9spfT/P58i+2AdIG/t1AAAAFQDvULhT3kNFpbwcqon8yBmjMz3CLQAAAIEArm7ioeXgIrPkkJjPGLtbx9Ecbvcp8Ms8rGnk7N6N3/TRUH6ftcSbvEN8mhBmwHLg+98UN165f4Qq1bweZ+YmYVb5rjaFVF0CGQtiplOLb8osU4gh704xm3hfq23cBv59p4Y8ntCPhFQXg3LmjSPZtFM8a8yY5i/hxysaja80dycAAACAK9hcZ4zrjFFLeQCqRRk32uvqhS4d+3kx2M4+ajxFG1srIchBqO4G/MwihvrwMcLLAfpKQhymKR6LV4E/YYtxaBM2ttEZGYbmI7CTocYIEmusWeHs9+pltlR10P40tYMJEmZScOQibsyO1fkvBGsJIlNNsvh6QWp0CXaZAqRW8XI=", 
+        "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBBi6yGSGluUyiCirD6aKbYOywTD/PGTD7ZzQ4PsSKfwGIkzK6lIc+x0QtAnR4SptjTzcUtCNKxbfl1cFsGXHXTA=", 
+        "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIK8L605bLhWAwRgzTYNpGtPPdcoNQwmOyvQTTvMI8uSo", 
+        "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQCeO3M1fLA9LscfA+Mku4PSUjXg8tneDrx4dRBhccl9nLe33Lo1ZxZAHYVVCdhXdtRVy+ewprQ3TTf6Nh+tlATMVaHnWJvl772eydL0u2u5MPNMBed5Iyko1txSTXiUEi8SZors1+ansJLybZu8dYnGNrjbBwNpd69A1ScuovswTvE4RHV0wQBZ+hU73kkSN6HhZEvoeXZuj2kS+qA/06wYNmzoAE9I1vCk/U/szuEwixtCA6SKY/MGO988zpoJzYQKCsPtaMJ4z4XY/ykO29nPQjkrYf9sjhXgHGmF73NnjZhQpUArb4QxXQO2kqOR9vR15ugldVol7WsLV2YZsjDl", 
+        "ansible_ssh_port": 22, 
+        "ansible_ssh_private_key_file": "~/.ssh/vagrant_id_rsa", 
+        "ansible_ssh_user": "vagrant", 
+        "ansible_swapfree_mb": 0, 
+        "ansible_swaptotal_mb": 0, 
+        "ansible_system": "Linux", 
+        "ansible_system_capabilities": [
+            "cap_chown", 
+            "cap_dac_override", 
+            "cap_dac_read_search", 
+            "cap_fowner", 
+            "cap_fsetid", 
+            "cap_kill", 
+            "cap_setgid", 
+            "cap_setuid", 
+            "cap_setpcap", 
+            "cap_linux_immutable", 
+            "cap_net_bind_service", 
+            "cap_net_broadcast", 
+            "cap_net_admin", 
+            "cap_net_raw", 
+            "cap_ipc_lock", 
+            "cap_ipc_owner", 
+            "cap_sys_module", 
+            "cap_sys_rawio", 
+            "cap_sys_chroot", 
+            "cap_sys_ptrace", 
+            "cap_sys_pacct", 
+            "cap_sys_admin", 
+            "cap_sys_boot", 
+            "cap_sys_nice", 
+            "cap_sys_resource", 
+            "cap_sys_time", 
+            "cap_sys_tty_config", 
+            "cap_mknod", 
+            "cap_lease", 
+            "cap_audit_write", 
+            "cap_audit_control", 
+            "cap_setfcap", 
+            "cap_mac_override", 
+            "cap_mac_admin", 
+            "cap_syslog", 
+            "cap_wake_alarm", 
+            "cap_block_suspend", 
+            "37+ep"
+        ], 
+        "ansible_system_capabilities_enforced": "True", 
+        "ansible_system_vendor": "innotek GmbH", 
+        "ansible_uptime_seconds": 2342, 
+        "ansible_user_dir": "/root", 
+        "ansible_user_gecos": "root", 
+        "ansible_user_gid": 0, 
+        "ansible_user_id": "root", 
+        "ansible_user_shell": "/bin/bash", 
+        "ansible_user_uid": 0, 
+        "ansible_userspace_architecture": "x86_64", 
+        "ansible_userspace_bits": "64", 
+        "ansible_version": {
+            "full": "2.5.14", 
+            "major": 2, 
+            "minor": 5, 
+            "revision": 14, 
+            "string": "2.5.14"
+        }, 
+        "ansible_virtualization_role": "guest", 
+        "ansible_virtualization_type": "virtualbox", 
+        "boss__bootstrap_register_home": {
+            "changed": false, 
+            "msg": "All items completed", 
+            "results": [
+                {
+                    "_ansible_ignore_errors": null, 
+                    "_ansible_item_label": "/home/bossjones", 
+                    "_ansible_item_result": true, 
+                    "_ansible_no_log": false, 
+                    "_ansible_parsed": true, 
+                    "changed": false, 
+                    "failed": false, 
+                    "invocation": {
+                        "module_args": {
+                            "checksum_algorithm": "sha1", 
+                            "follow": false, 
+                            "get_attributes": true, 
+                            "get_checksum": true, 
+                            "get_md5": null, 
+                            "get_mime": true, 
+                            "path": "/home/bossjones"
+                        }
+                    }, 
+                    "item": "/home/bossjones", 
+                    "stat": {
+                        "atime": 1546466498.8384018, 
+                        "attr_flags": "e", 
+                        "attributes": [
+                            "extents"
+                        ], 
+                        "block_size": 4096, 
+                        "blocks": 8, 
+                        "charset": "binary", 
+                        "ctime": 1546466499.6668158, 
+                        "dev": 2049, 
+                        "device_type": 0, 
+                        "executable": true, 
+                        "exists": true, 
+                        "gid": 999, 
+                        "gr_name": "admins", 
+                        "inode": 260109, 
+                        "isblk": false, 
+                        "ischr": false, 
+                        "isdir": true, 
+                        "isfifo": false, 
+                        "isgid": false, 
+                        "islnk": false, 
+                        "isreg": false, 
+                        "issock": false, 
+                        "isuid": false, 
+                        "mimetype": "inode/directory", 
+                        "mode": "0750", 
+                        "mtime": 1546466499.6668158, 
+                        "nlink": 3, 
+                        "path": "/home/bossjones", 
+                        "pw_name": "bossjones", 
+                        "readable": true, 
+                        "rgrp": true, 
+                        "roth": false, 
+                        "rusr": true, 
+                        "size": 4096, 
+                        "uid": 1002, 
+                        "version": "1008407669", 
+                        "wgrp": false, 
+                        "woth": false, 
+                        "writeable": true, 
+                        "wusr": true, 
+                        "xgrp": true, 
+                        "xoth": false, 
+                        "xusr": true
+                    }
+                }
+            ]
+        }, 
+        "boss__core__fact_ansible_controller": "", 
+        "boss__core__register_core_fact": {
+            "changed": false, 
+            "checksum": "ce3e4f07e6f1a565e21c277777a040d94112cac0", 
+            "dest": "/etc/ansible/facts.d/core.fact", 
+            "diff": {
+                "after": {
+                    "path": "/etc/ansible/facts.d/core.fact"
+                }, 
+                "before": {
+                    "path": "/etc/ansible/facts.d/core.fact"
+                }
+            }, 
+            "failed": false, 
+            "gid": 0, 
+            "group": "root", 
+            "mode": "0755", 
+            "owner": "root", 
+            "path": "/etc/ansible/facts.d/core.fact", 
+            "size": 1750, 
+            "state": "file", 
+            "uid": 0
+        }, 
+        "boss__core__register_fact_files": {
+            "changed": false, 
+            "msg": "All items completed", 
+            "results": [
+                {
+                    "_ansible_ignore_errors": null, 
+                    "_ansible_item_label": "root", 
+                    "_ansible_item_result": true, 
+                    "_ansible_no_log": false, 
+                    "_ansible_parsed": true, 
+                    "changed": false, 
+                    "checksum": "280909e6ec0146d4b14debad09aa9f1f636d0682", 
+                    "dest": "/etc/ansible/facts.d/root.fact", 
+                    "diff": {
+                        "after": {
+                            "path": "/etc/ansible/facts.d/root.fact"
+                        }, 
+                        "before": {
+                            "path": "/etc/ansible/facts.d/root.fact"
+                        }
+                    }, 
+                    "failed": false, 
+                    "gid": 0, 
+                    "group": "root", 
+                    "invocation": {
+                        "module_args": {
+                            "attributes": null, 
+                            "backup": null, 
+                            "content": null, 
+                            "delimiter": null, 
+                            "dest": "/etc/ansible/facts.d/root.fact", 
+                            "diff_peek": null, 
+                            "directory_mode": null, 
+                            "follow": false, 
+                            "force": false, 
+                            "group": "root", 
+                            "mode": "0644", 
+                            "original_basename": "root.fact.j2", 
+                            "owner": "root", 
+                            "path": "/etc/ansible/facts.d/root.fact", 
+                            "recurse": false, 
+                            "regexp": null, 
+                            "remote_src": null, 
+                            "selevel": null, 
+                            "serole": null, 
+                            "setype": null, 
+                            "seuser": null, 
+                            "src": "root.fact.j2", 
+                            "state": "file", 
+                            "unsafe_writes": null, 
+                            "validate": null
+                        }
+                    }, 
+                    "item": "root", 
+                    "mode": "0644", 
+                    "owner": "root", 
+                    "path": "/etc/ansible/facts.d/root.fact", 
+                    "size": 439, 
+                    "state": "file", 
+                    "uid": 0
+                }, 
+                {
+                    "_ansible_ignore_errors": null, 
+                    "_ansible_item_label": "tags", 
+                    "_ansible_item_result": true, 
+                    "_ansible_no_log": false, 
+                    "_ansible_parsed": true, 
+                    "changed": false, 
+                    "checksum": "cd0d4cc32346750408f7d4f5e78ec9a6e5b79a0d", 
+                    "dest": "/etc/ansible/facts.d/tags.fact", 
+                    "diff": {
+                        "after": {
+                            "path": "/etc/ansible/facts.d/tags.fact"
+                        }, 
+                        "before": {
+                            "path": "/etc/ansible/facts.d/tags.fact"
+                        }
+                    }, 
+                    "failed": false, 
+                    "gid": 0, 
+                    "group": "root", 
+                    "invocation": {
+                        "module_args": {
+                            "attributes": null, 
+                            "backup": null, 
+                            "content": null, 
+                            "delimiter": null, 
+                            "dest": "/etc/ansible/facts.d/tags.fact", 
+                            "diff_peek": null, 
+                            "directory_mode": null, 
+                            "follow": false, 
+                            "force": false, 
+                            "group": "root", 
+                            "mode": "0644", 
+                            "original_basename": "tags.fact.j2", 
+                            "owner": "root", 
+                            "path": "/etc/ansible/facts.d/tags.fact", 
+                            "recurse": false, 
+                            "regexp": null, 
+                            "remote_src": null, 
+                            "selevel": null, 
+                            "serole": null, 
+                            "setype": null, 
+                            "seuser": null, 
+                            "src": "tags.fact.j2", 
+                            "state": "file", 
+                            "unsafe_writes": null, 
+                            "validate": null
+                        }
+                    }, 
+                    "item": "tags", 
+                    "mode": "0644", 
+                    "owner": "root", 
+                    "path": "/etc/ansible/facts.d/tags.fact", 
+                    "size": 3, 
+                    "state": "file", 
+                    "uid": 0
+                }, 
+                {
+                    "_ansible_ignore_errors": null, 
+                    "_ansible_item_label": "uuid", 
+                    "_ansible_item_result": true, 
+                    "_ansible_no_log": false, 
+                    "_ansible_parsed": true, 
+                    "changed": false, 
+                    "checksum": "af15719b6e19215ee20643384e87f0d098357aa8", 
+                    "dest": "/etc/ansible/facts.d/uuid.fact", 
+                    "diff": {
+                        "after": {
+                            "path": "/etc/ansible/facts.d/uuid.fact"
+                        }, 
+                        "before": {
+                            "path": "/etc/ansible/facts.d/uuid.fact"
+                        }
+                    }, 
+                    "failed": false, 
+                    "gid": 0, 
+                    "group": "root", 
+                    "invocation": {
+                        "module_args": {
+                            "attributes": null, 
+                            "backup": null, 
+                            "content": null, 
+                            "delimiter": null, 
+                            "dest": "/etc/ansible/facts.d/uuid.fact", 
+                            "diff_peek": null, 
+                            "directory_mode": null, 
+                            "follow": false, 
+                            "force": false, 
+                            "group": "root", 
+                            "mode": "0644", 
+                            "original_basename": "uuid.fact.j2", 
+                            "owner": "root", 
+                            "path": "/etc/ansible/facts.d/uuid.fact", 
+                            "recurse": false, 
+                            "regexp": null, 
+                            "remote_src": null, 
+                            "selevel": null, 
+                            "serole": null, 
+                            "setype": null, 
+                            "seuser": null, 
+                            "src": "uuid.fact.j2", 
+                            "state": "file", 
+                            "unsafe_writes": null, 
+                            "validate": null
+                        }
+                    }, 
+                    "item": "uuid", 
+                    "mode": "0644", 
+                    "owner": "root", 
+                    "path": "/etc/ansible/facts.d/uuid.fact", 
+                    "size": 39, 
+                    "state": "file", 
+                    "uid": 0
+                }
+            ]
+        }, 
+        "boss__core__register_fact_scripts": {
+            "changed": true, 
+            "dest": "/etc/ansible/facts.d/", 
+            "failed": false, 
+            "src": "/private/etc/ansible/roles/boss-ansible-role-core/files/etc/ansible/facts.d/"
+        }, 
+        "boss__core__register_uuid": {
+            "changed": false, 
+            "cmd": "dmidecode --string system-uuid | tail -n 1 || true", 
+            "delta": "0:00:00.002219", 
+            "end": "2019-01-02 17:39:13.003954", 
+            "failed": false, 
+            "rc": 0, 
+            "start": "2019-01-02 17:39:13.001735", 
+            "stderr": "", 
+            "stderr_lines": [], 
+            "stdout": "5C9011C6-5952-4D79-9111-409BB3399102", 
+            "stdout_lines": [
+                "5C9011C6-5952-4D79-9111-409BB3399102"
+            ]
+        }, 
+        "boss__etckeeper__register_highlevel_package_manager": {
+            "changed": false, 
+            "cmd": ". /etc/etckeeper/etckeeper.conf.dpkg-divert && echo ${HIGHLEVEL_PACKAGE_MANAGER}", 
+            "delta": "0:00:00.001666", 
+            "end": "2019-01-02 17:39:29.276537", 
+            "failed": false, 
+            "failed_when_result": false, 
+            "rc": 0, 
+            "start": "2019-01-02 17:39:29.274871", 
+            "stderr": "", 
+            "stderr_lines": [], 
+            "stdout": "apt", 
+            "stdout_lines": [
+                "apt"
+            ]
+        }, 
+        "boss__etckeeper__register_init": {
+            "changed": false, 
+            "cmd": "etckeeper init", 
+            "failed": false, 
+            "rc": 0, 
+            "stdout": "skipped, since /etc/.etckeeper exists", 
+            "stdout_lines": [
+                "skipped, since /etc/.etckeeper exists"
+            ]
+        }, 
+        "boss__etckeeper__register_lowlevel_package_manager": {
+            "changed": false, 
+            "cmd": ". /etc/etckeeper/etckeeper.conf.dpkg-divert && echo ${LOWLEVEL_PACKAGE_MANAGER}", 
+            "delta": "0:00:00.001637", 
+            "end": "2019-01-02 17:39:29.463071", 
+            "failed": false, 
+            "failed_when_result": false, 
+            "rc": 0, 
+            "start": "2019-01-02 17:39:29.461434", 
+            "stderr": "", 
+            "stderr_lines": [], 
+            "stdout": "dpkg", 
+            "stdout_lines": [
+                "dpkg"
+            ]
+        }, 
+        "boss__fact__register_facts": {
+            "changed": false, 
+            "checksum": "de5a1faa7115107858e3ed64ecf3c360e6eb104b", 
+            "dest": "/etc/ansible/facts.d/boss__fact.fact", 
+            "diff": {
+                "after": {
+                    "path": "/etc/ansible/facts.d/boss__fact.fact"
+                }, 
+                "before": {
+                    "path": "/etc/ansible/facts.d/boss__fact.fact"
+                }
+            }, 
+            "failed": false, 
+            "gid": 0, 
+            "group": "root", 
+            "mode": "0755", 
+            "owner": "root", 
+            "path": "/etc/ansible/facts.d/boss__fact.fact", 
+            "size": 1333, 
+            "state": "file", 
+            "uid": 0
+        }, 
+        "boss__kubernetes__kubeadm__apt_arch": "amd64", 
+        "boss__ntp__apt_arch": "amd64", 
+        "current_timezone": {
+            "changed": false, 
+            "cmd": "cat /etc/timezone", 
+            "delta": "0:00:00.002000", 
+            "end": "2019-01-02 17:39:38.414766", 
+            "failed": false, 
+            "rc": 0, 
+            "start": "2019-01-02 17:39:38.412766", 
+            "stderr": "", 
+            "stderr_lines": [], 
+            "stdout": "America/New_York", 
+            "stdout_lines": [
+                "America/New_York"
+            ]
+        }, 
+        "date": {
+            "changed": false, 
+            "cmd": "date", 
+            "delta": "0:00:00.002122", 
+            "end": "2019-01-02 17:39:45.234965", 
+            "failed": false, 
+            "rc": 0, 
+            "start": "2019-01-02 17:39:45.232843", 
+            "stderr": "", 
+            "stderr_lines": [], 
+            "stdout": "Wed Jan  2 17:39:45 EST 2019", 
+            "stdout_lines": [
+                "Wed Jan  2 17:39:45 EST 2019"
+            ]
+        }, 
+        "gather_subset": [
+            "all"
+        ], 
+        "getent_passwd": {
+            "_apt": [
+                "x", 
+                "105", 
+                "65534", 
+                "", 
+                "/nonexistent", 
+                "/bin/false"
+            ], 
+            "backup": [
+                "x", 
+                "34", 
+                "34", 
+                "backup", 
+                "/var/backups", 
+                "/usr/sbin/nologin"
+            ], 
+            "bin": [
+                "x", 
+                "2", 
+                "2", 
+                "bin", 
+                "/bin", 
+                "/usr/sbin/nologin"
+            ], 
+            "bossjones": [
+                "x", 
+                "1002", 
+                "100", 
+                "System Administrator", 
+                "/home/bossjones", 
+                "/bin/bash"
+            ], 
+            "daemon": [
+                "x", 
+                "1", 
+                "1", 
+                "daemon", 
+                "/usr/sbin", 
+                "/usr/sbin/nologin"
+            ], 
+            "dnsmasq": [
+                "x", 
+                "109", 
+                "65534", 
+                "dnsmasq,,,", 
+                "/var/lib/misc", 
+                "/bin/false"
+            ], 
+            "games": [
+                "x", 
+                "5", 
+                "60", 
+                "games", 
+                "/usr/games", 
+                "/usr/sbin/nologin"
+            ], 
+            "gnats": [
+                "x", 
+                "41", 
+                "41", 
+                "Gnats Bug-Reporting System (admin)", 
+                "/var/lib/gnats", 
+                "/usr/sbin/nologin"
+            ], 
+            "irc": [
+                "x", 
+                "39", 
+                "39", 
+                "ircd", 
+                "/var/run/ircd", 
+                "/usr/sbin/nologin"
+            ], 
+            "list": [
+                "x", 
+                "38", 
+                "38", 
+                "Mailing List Manager", 
+                "/var/list", 
+                "/usr/sbin/nologin"
+            ], 
+            "lp": [
+                "x", 
+                "7", 
+                "7", 
+                "lp", 
+                "/var/spool/lpd", 
+                "/usr/sbin/nologin"
+            ], 
+            "lxd": [
+                "x", 
+                "106", 
+                "65534", 
+                "", 
+                "/var/lib/lxd/", 
+                "/bin/false"
+            ], 
+            "mail": [
+                "x", 
+                "8", 
+                "8", 
+                "mail", 
+                "/var/mail", 
+                "/usr/sbin/nologin"
+            ], 
+            "man": [
+                "x", 
+                "6", 
+                "12", 
+                "man", 
+                "/var/cache/man", 
+                "/usr/sbin/nologin"
+            ], 
+            "messagebus": [
+                "x", 
+                "107", 
+                "111", 
+                "", 
+                "/var/run/dbus", 
+                "/bin/false"
+            ], 
+            "news": [
+                "x", 
+                "9", 
+                "9", 
+                "news", 
+                "/var/spool/news", 
+                "/usr/sbin/nologin"
+            ], 
+            "nobody": [
+                "x", 
+                "65534", 
+                "65534", 
+                "nobody", 
+                "/nonexistent", 
+                "/usr/sbin/nologin"
+            ], 
+            "ntp": [
+                "x", 
+                "112", 
+                "117", 
+                "", 
+                "/home/ntp", 
+                "/bin/false"
+            ], 
+            "pollinate": [
+                "x", 
+                "111", 
+                "1", 
+                "", 
+                "/var/cache/pollinate", 
+                "/bin/false"
+            ], 
+            "proxy": [
+                "x", 
+                "13", 
+                "13", 
+                "proxy", 
+                "/bin", 
+                "/usr/sbin/nologin"
+            ], 
+            "root": [
+                "x", 
+                "0", 
+                "0", 
+                "root", 
+                "/root", 
+                "/bin/bash"
+            ], 
+            "sshd": [
+                "x", 
+                "110", 
+                "65534", 
+                "", 
+                "/var/run/sshd", 
+                "/usr/sbin/nologin"
+            ], 
+            "sync": [
+                "x", 
+                "4", 
+                "65534", 
+                "sync", 
+                "/bin", 
+                "/bin/sync"
+            ], 
+            "sys": [
+                "x", 
+                "3", 
+                "3", 
+                "sys", 
+                "/dev", 
+                "/usr/sbin/nologin"
+            ], 
+            "syslog": [
+                "x", 
+                "104", 
+                "108", 
+                "", 
+                "/home/syslog", 
+                "/bin/false"
+            ], 
+            "systemd-bus-proxy": [
+                "x", 
+                "103", 
+                "105", 
+                "systemd Bus Proxy,,,", 
+                "/run/systemd", 
+                "/bin/false"
+            ], 
+            "systemd-network": [
+                "x", 
+                "101", 
+                "103", 
+                "systemd Network Management,,,", 
+                "/run/systemd/netif", 
+                "/bin/false"
+            ], 
+            "systemd-resolve": [
+                "x", 
+                "102", 
+                "104", 
+                "systemd Resolver,,,", 
+                "/run/systemd/resolve", 
+                "/bin/false"
+            ], 
+            "systemd-timesync": [
+                "x", 
+                "100", 
+                "102", 
+                "systemd Time Synchronization,,,", 
+                "/run/systemd", 
+                "/bin/false"
+            ], 
+            "telegraf": [
+                "x", 
+                "999", 
+                "997", 
+                "", 
+                "/etc/telegraf", 
+                "/bin/false"
+            ], 
+            "ubuntu": [
+                "x", 
+                "1001", 
+                "1001", 
+                "Ubuntu", 
+                "/home/ubuntu", 
+                "/bin/bash"
+            ], 
+            "uucp": [
+                "x", 
+                "10", 
+                "10", 
+                "uucp", 
+                "/var/spool/uucp", 
+                "/usr/sbin/nologin"
+            ], 
+            "uuidd": [
+                "x", 
+                "108", 
+                "112", 
+                "", 
+                "/run/uuidd", 
+                "/bin/false"
+            ], 
+            "vagrant": [
+                "x", 
+                "1000", 
+                "1000", 
+                ",,,", 
+                "/home/vagrant", 
+                "/bin/bash"
+            ], 
+            "www-data": [
+                "x", 
+                "33", 
+                "33", 
+                "www-data", 
+                "/var/www", 
+                "/usr/sbin/nologin"
+            ]
+        }, 
+        "group_names": [
+            "influx_masters", 
+            "servers", 
+            "telegraf-master-01", 
+            "telegraf_masters"
+        ], 
+        "groups": {
+            "all": [
+                "telegraf-master-01", 
+                "localhost"
+            ], 
+            "influx_masters": [
+                "telegraf-master-01"
+            ], 
+            "local": [
+                "localhost"
+            ], 
+            "servers": [
+                "telegraf-master-01"
+            ], 
+            "telegraf-master-01": [
+                "telegraf-master-01"
+            ], 
+            "telegraf_masters": [
+                "telegraf-master-01"
+            ], 
+            "ungrouped": []
+        }, 
+        "inventory_dir": "/Users/malcolm/dev/bossjones/boss-ansible-role-telegraf", 
+        "inventory_file": "/Users/malcolm/dev/bossjones/boss-ansible-role-telegraf/inventory.ini", 
+        "inventory_hostname": "telegraf-master-01", 
+        "inventory_hostname_short": "telegraf-master-01", 
+        "ip": "192.168.40.129", 
+        "module_setup": true, 
+        "ntp_output": {
+            "changed": false, 
+            "msg": "All items completed", 
+            "results": [
+                {
+                    "_ansible_ignore_errors": null, 
+                    "_ansible_item_label": "ntp", 
+                    "_ansible_item_result": true, 
+                    "_ansible_no_log": false, 
+                    "_ansible_parsed": true, 
+                    "cache_update_time": 1546466456, 
+                    "cache_updated": false, 
+                    "changed": false, 
+                    "failed": false, 
+                    "invocation": {
+                        "module_args": {
+                            "allow_unauthenticated": false, 
+                            "autoclean": false, 
+                            "autoremove": false, 
+                            "cache_valid_time": 0, 
+                            "deb": null, 
+                            "default_release": null, 
+                            "dpkg_options": "force-confdef,force-confold", 
+                            "force": false, 
+                            "force_apt_get": false, 
+                            "install_recommends": null, 
+                            "name": "ntp", 
+                            "only_upgrade": false, 
+                            "package": [
+                                "ntp"
+                            ], 
+                            "purge": false, 
+                            "state": "present", 
+                            "update_cache": null, 
+                            "upgrade": null
+                        }
+                    }, 
+                    "item": "ntp"
+                }
+            ]
+        }, 
+        "ntp_sync_status": {
+            "changed": false, 
+            "cmd": "/usr/bin/timedatectl status | grep \"NTP synchronized\"", 
+            "delta": "0:00:00.008739", 
+            "end": "2019-01-02 17:39:38.679380", 
+            "failed": false, 
+            "rc": 0, 
+            "start": "2019-01-02 17:39:38.670641", 
+            "stderr": "", 
+            "stderr_lines": [], 
+            "stdout": "NTP synchronized: yes", 
+            "stdout_lines": [
+                "NTP synchronized: yes"
+            ]
+        }, 
+        "ntpq": {
+            "changed": false, 
+            "cmd": "ntpq -p", 
+            "delta": "0:00:00.014776", 
+            "end": "2019-01-02 17:39:44.959436", 
+            "failed": false, 
+            "rc": 0, 
+            "start": "2019-01-02 17:39:44.944660", 
+            "stderr": "", 
+            "stderr_lines": [], 
+            "stdout": "     remote           refid      st t when poll reach   delay   offset  jitter\n==============================================================================\n+backoffice-1.in 144.217.75.74    3 u    8  128  377   80.717  -16.459   4.505\n-dns2.switch.ca  206.108.0.134    3 u    2  128  377   76.518  -13.995   3.205\n*ns512634.ip-167 192.168.10.254   2 u   12  128  377   21.527   -5.749   1.637\n+mailgateway.fam 192.53.103.108   2 u  123  128  377   92.568   -6.241   1.396", 
+            "stdout_lines": [
+                "     remote           refid      st t when poll reach   delay   offset  jitter", 
+                "==============================================================================", 
+                "+backoffice-1.in 144.217.75.74    3 u    8  128  377   80.717  -16.459   4.505", 
+                "-dns2.switch.ca  206.108.0.134    3 u    2  128  377   76.518  -13.995   3.205", 
+                "*ns512634.ip-167 192.168.10.254   2 u   12  128  377   21.527   -5.749   1.637", 
+                "+mailgateway.fam 192.53.103.108   2 u  123  128  377   92.568   -6.241   1.396"
+            ]
+        }, 
+        "omit": "__omit_place_holder__89620b22dc77785c1a13e8760ba5177a297c62af", 
+        "playbook_dir": "/Users/malcolm/dev/bossjones/boss-ansible-role-telegraf", 
+        "result": {
+            "changed": false, 
+            "skip_reason": "Conditional result was False", 
+            "skipped": true
+        }, 
+        "sys_arch": "amd64", 
+        "timedatectl_set_no_ntp_result": {
+            "changed": true, 
+            "cmd": [
+                "/usr/bin/timedatectl", 
+                "status"
+            ], 
+            "delta": "0:00:00.002847", 
+            "end": "2019-01-02 17:39:39.508047", 
+            "failed": false, 
+            "rc": 0, 
+            "start": "2019-01-02 17:39:39.505200", 
+            "stderr": "", 
+            "stderr_lines": [], 
+            "stdout": "      Local time: Wed 2019-01-02 17:39:39 EST\n  Universal time: Wed 2019-01-02 22:39:39 UTC\n        RTC time: Wed 2019-01-02 22:39:34\n       Time zone: America/New_York (EST, -0500)\n Network time on: no\nNTP synchronized: yes\n RTC in local TZ: no", 
+            "stdout_lines": [
+                "      Local time: Wed 2019-01-02 17:39:39 EST", 
+                "  Universal time: Wed 2019-01-02 22:39:39 UTC", 
+                "        RTC time: Wed 2019-01-02 22:39:34", 
+                "       Time zone: America/New_York (EST, -0500)", 
+                " Network time on: no", 
+                "NTP synchronized: yes", 
+                " RTC in local TZ: no"
+            ]
+        }, 
+        "timedatectl_status_result": {
+            "changed": false, 
+            "cmd": [
+                "/usr/bin/timedatectl", 
+                "status"
+            ], 
+            "delta": "0:00:00.002818", 
+            "end": "2019-01-02 17:39:39.076529", 
+            "failed": false, 
+            "rc": 0, 
+            "start": "2019-01-02 17:39:39.073711", 
+            "stderr": "", 
+            "stderr_lines": [], 
+            "stdout": "      Local time: Wed 2019-01-02 17:39:39 EST\n  Universal time: Wed 2019-01-02 22:39:39 UTC\n        RTC time: Wed 2019-01-02 22:39:33\n       Time zone: America/New_York (EST, -0500)\n Network time on: yes\nNTP synchronized: yes\n RTC in local TZ: no", 
+            "stdout_lines": [
+                "      Local time: Wed 2019-01-02 17:39:39 EST", 
+                "  Universal time: Wed 2019-01-02 22:39:39 UTC", 
+                "        RTC time: Wed 2019-01-02 22:39:33", 
+                "       Time zone: America/New_York (EST, -0500)", 
+                " Network time on: yes", 
+                "NTP synchronized: yes", 
+                " RTC in local TZ: no"
+            ]
+        }
+    }
+}
+
+

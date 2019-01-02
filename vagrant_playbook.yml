@@ -147,6 +147,15 @@
   become_method: sudo
   environment:
     DEBIAN_FRONTEND: noninteractive
+  vars:
+    boss__telegraf__timezone: 'America/New_York'
+    telegraf_outputs:
+      influxdb:
+        database: telegraf
+        enabled: False
+      file:
+        enabled: True
+    telagraf_config: True
   roles:
     - role: ../
       boss__telegraf__timezone: 'America/New_York'
