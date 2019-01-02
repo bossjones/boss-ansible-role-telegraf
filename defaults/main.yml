@@ -1,4 +1,25 @@
 ---
+
+
+# number of new filedescriptor limit
+boss__telegraf__sysctl_fileno: 1048576
+
+boss__telegraf__systemd_limit_mem_lock: infinity
+boss__telegraf__systemd_limit_no_file: 40000
+boss__telegraf__systemd_limit_nproc: infinity
+boss__telegraf__systemd_limit_core: infinity
+# RPCNFSDCOUNT
+# LimitMEMLOCK=infinity
+# LimitNOFILE=1048576
+# LimitNPROC=infinity
+# LimitCORE=infinity
+
+
+bossjones__user: vagrant
+bossjones__group: vagrant
+
+boss__nfs__nfs_daemon: nfs-kernel-server
+
 # defaults file for ansible-telegraf
 enable_telegraf_global_tags: false
 
