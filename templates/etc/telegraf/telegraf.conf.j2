@@ -35,20 +35,20 @@
   password = "{{ telegraf_outputs.influxdb.password }}"
 {%   endif %}
 {% endif %}
-{% if telegraf_outputs['elasticsearch']['enabled'] %}
+{% if telegraf_outputs.elasticsearch.enabled %}
 [[outputs.elasticsearch]]
-  urls = ["{{ telegraf_outputs['elasticsearch']['urls']|join('", "') }}"]
-  timeout = "{{ telegraf_outputs['elasticsearch']['timeout'] }}"
-  enable_sniffer = {{ telegraf_outputs['elasticsearch']['enable_sniffer']|lower }}
-  health_check_interval = "{{ telegraf_outputs['elasticsearch']['health_check_interval'] }}"
-{%   if telegraf_outputs['elasticsearch']['auth']['enabled'] %}
-  username = "{{ telegraf_outputs['elasticsearch']['auth']['username'] }}"
-  password = "{{ telegraf_outputs['elasticsearch']['auth']['password'] }}"
+  urls = ["{{ telegraf_outputs.elasticsearch.urls|join('", "') }}"]
+  timeout = "{{ telegraf_outputs.elasticsearch.timeout }}"
+  enable_sniffer = {{ telegraf_outputs.elasticsearch.enable_sniffer|lower }}
+  health_check_interval = "{{ telegraf_outputs.elasticsearch.health_check_interval }}"
+{%   if telegraf_outputs.elasticsearch.auth.enabled %}
+  username = "{{ telegraf_outputs.elasticsearch.auth.username }}"
+  password = "{{ telegraf_outputs.elasticsearch.auth.password }}"
 {%   endif %}
-  index_name = "{{ telegraf_outputs['elasticsearch']['index_name'] }}"
-  manage_template = {{ telegraf_outputs['elasticsearch']['manage_template']|lower }}
-  template_name = "{{ telegraf_outputs['elasticsearch']['template_name'] }}"
-  overwrite_template = {{ telegraf_outputs['elasticsearch']['overwrite_template']|lower }}
+  index_name = "{{ telegraf_outputs.elasticsearch.index_name }}"
+  manage_template = {{ telegraf_outputs.elasticsearch.manage_template|lower }}
+  template_name = "{{ telegraf_outputs.elasticsearch.template_name }}"
+  overwrite_template = {{ telegraf_outputs.elasticsearch.overwrite_template|lower }}
 {% endif %}
 {% if telegraf_outputs.graphite.enabled %}
 [[outputs.graphite]]
